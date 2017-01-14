@@ -1,17 +1,6 @@
-/*move to ballot.scss*/
-/* canvas styles */
-html, body
-{
-    font:normal normal normal 100%/1.4 tahoma, sans-serif;
-    background:#f9f9f9;
-    color:#000;
-}
-body
-{
+#rtv-ballot{
     font-size:0.8em;
     font-family: Helvetica, sans-serif;
-}
-#rtv-ballot{
     max-width: 800px;
     width: 100%;
     margin: 0 auto;
@@ -77,6 +66,8 @@ ul[data-draggable="target"]
     li{
         border-bottom: 1px solid $rtv_grey_light;
         padding: 0.5rem;
+        display: block;
+        width: 100%;
     }
 }
 
