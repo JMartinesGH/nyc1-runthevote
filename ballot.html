@@ -4,45 +4,31 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Run the Vote Ballot</title>
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <link rel="stylesheet" href="/resources/demos/style.css">
+  <link rel="stylesheet" href="assets/css/style.css">
   <style>
-  section{
-    max-width: 900px;
-    margin: 50px auto;
-
-  }
-  #rtv-ballot{
-
-  }
-  #sortable { list-style-type: none; margin: 0; padding: 0; width: 60%; }
-  #sortable li { margin: 0 3px 3px 3px; padding: 0.4em; padding-left: 1.5em; font-size: 1.4em; height: 18px; }
-  #sortable li span { position: absolute; margin-left: -1.3em; }
+  
   </style>
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script>
-  $( function() {
-    $( "#sortable" ).sortable();
-    $( "#sortable" ).disableSelection();
-  } );
-  </script>
 </head>
 <body>
 
   <section id="rtv-ballot">
-    <h1>Simple Drag Ballot</h1>
-    <ul id="sortable">
-      <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Candidate 1</li>
-      <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Candidate 2</li>
-      <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Candidate 3</li>
-      <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Candidate 4</li>
-      <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Candidate 5</li>
-      <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Candidate 6</li>
-      <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Candidate 7</li>
+    <h1>Ballot Box</h1>
+    <ul id="ballot-box" data-draggable="target">
+    </ul>
+    <h2>The Candidates</h2>
+    <ul id="candidates" data-draggable="target">
+      <li class="candidate" data-draggable="item">Candidate 1</li>
+      <li class="candidate" data-draggable="item">Candidate 2</li>
+      <li class="candidate" data-draggable="item">Candidate 3</li>
+      <li class="candidate" data-draggable="item">Candidate 4</li>
+      <li class="candidate" data-draggable="item">Candidate 5</li>
+      <li class="candidate" data-draggable="item">Candidate 6</li>
+      <li class="candidate" data-draggable="item">Candidate 7</li>
     </ul>
   </section>
  
+  <script src="assets/js/ballot.js"></script>
  
 </body>
 </html>
