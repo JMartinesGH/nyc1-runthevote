@@ -67,10 +67,6 @@
           <div class="overlay"></div>
 
         </div>
-        <div class="candidate">
-          <div class="overlay"></div>
-
-        </div>
       </div>
     </div>
     </div>
@@ -85,7 +81,33 @@
   <script src="assets/js/c3.min.js"></script>
   <script type="text/javascript">
 
-    $active_candidate = $(".candidate.active").append("<div class='info'></div>");
+    var percent_can = 45;
+    var dis = "negative";
+
+    function addtoCandidate(){
+      $(".candidate.active .overlay").hide();
+      $(".candidate.active").append("<div class='info'></div>");
+      $active_candidate = $(".candidate.active .info");
+      $active_candidate.append( "<div class='card'>"
+          + "<img src='http://a4.files.biography.com/image/upload/c_fill,cs_srgb,dpr_1.0,g_face,h_300,q_80,w_300/MTE4MDAzNDEwMDU4NTc3NDIy.jpg' />"
+          + "</div>"
+        );
+      $active_candidate.append( "<div class='percent'>"
+        + "<div class='num "+ dis +"'>" + percent_can + "%</div>"
+        + "<h4> Relation </h4>"
+        + "</div>"
+      );
+    }
+
+    $(".candidate").click(function(){
+      $(".candidate.active .info").remove();
+      $(".overlay").show();
+      $(".candidate").removeClass("active");
+      $(this).addClass("active");
+      addtoCandidate();
+    })
+
+    addtoCandidate();
 
   </script>
 </body>
