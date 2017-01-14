@@ -30,10 +30,10 @@ ul[data-draggable="target"]
     margin:0 0.5em 0.5em 0;
     // padding:0.5em;
     
-    border:2px solid #e7e7e7;
+    border:2px solid $rtv_grey_light;
     border-radius:0.2em;
     
-    background:#f7f7f7;
+    background:$rtv_white;
     color:#555;
 }
 
@@ -71,7 +71,7 @@ ul[data-draggable="target"]
     text-align: center;
 
     li{
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid $rtv_grey_light;
         padding: 0.5rem;
     }
 }
@@ -79,7 +79,7 @@ ul[data-draggable="target"]
 #candidates{
     [data-draggable="item"]{
         display: inline-block;
-        border: 1px solid #e7e7e7;
+        border: 1px solid $rtv_grey_light;
         width: calc( 30% - 20px );
         margin: 1.25%;
         outline: 0;
