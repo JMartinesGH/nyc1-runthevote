@@ -79,7 +79,7 @@ ul[data-draggable="target"]
 #candidates{
     [data-draggable="item"]{
         display: inline-block;
-        border: 1px solid black;
+        border: 1px solid #e7e7e7;
         width: calc( 30% - 20px );
         margin: 1.25%;
         outline: 0;
