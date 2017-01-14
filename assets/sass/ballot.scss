@@ -54,5 +54,10 @@ section{
 }
 
 #candidates{
-    
+    [data-draggable="item"]{
+        display: inline-block;
+        border: 1px solid black;
+        width: 25%;
+        height: 150px;
+    }
 }
