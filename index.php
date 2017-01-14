@@ -29,7 +29,7 @@
         </section>
     </div>
 
-    <script src="//code.jquery.com/jquery-1.6.4.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script type="text/javascript" src="assets/js/vendor/jquery.fullPage.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function() {
