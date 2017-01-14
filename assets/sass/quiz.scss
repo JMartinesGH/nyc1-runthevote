@@ -1,9 +1,11 @@
 .quiz-text {
 
   p {
+    max-width: 90%;
     font-family: $merriweather;
     line-height: 2;
     padding-top: 3rem;
+    font-size: 1rem;
     @include desktop {
       font-size: 2rem;
       margin: 0 auto;
@@ -11,22 +13,19 @@
     }
 
     span.answer {
-      border: solid 3px currentColor;
-      padding: 2px 0px 1px 4px;
-      font-size: 26px;
-      border-radius: 6px;
-      margin-right: 5px;
+      border-bottom: solid 3px currentColor;
     }
   }
 
   select {
+    font-size: 1rem;
     font-family: $merriweather;
     border: none;
-    font-size: 21px;
     font-weight: 700;
     background-color: transparent;
-    text-transform: uppercase;
-    -webkit-appearance: menulist-text;
+    @include desktop {
+      font-size: 2rem;
+    }
   }
 
   select:focus {
