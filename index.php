@@ -5,28 +5,37 @@
 <head>
     <link rel="stylesheet" type="text/css" href="assets/css/vendor/jquery.fullPage.css" />
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <title>Run the Vote</title>
 </head>
-<body>
+<body id="homepage">
     <div id="fullpage">
         <!-- quiz/intro -->
-        <section class="section">
-            <h1>Quiz/intro</h1>
-        </section>
+        <div class="section" data-anchor="madlib">
+            <div>
+                <h1>Madlib/intro</h1>
+            </div>
+        </div>
         <!-- dashboard -->
-        <section class="section">
-            <h1>Dashboard</h1>
-        </section>
+        <div class="section" data-anchor="dashboard">
+            <div>
+                <h1>Dashboard</h1>
+            </div>
+        </div>
         <!-- ballot -->
-        <section class="section">
-            <h1>Ballot</h1>
-        </section>
+        <div class="section" data-anchor="ballot">
+            <!-- <div>
+                <h1>Ballot</h1>
+            </div> -->
+            <?php @include "partials/ballot.php"; ?>
+        </div>
 
         <!-- results -->
-        <section class="section">
-            <h1>Results</h1>
-        </section>
+        <div class="section" data-anchor="results">
+            <div>
+                <h1>Results</h1>
+            </div>
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
