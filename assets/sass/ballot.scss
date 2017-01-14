@@ -9,29 +9,31 @@ html, body
 body
 {
     font-size:0.8em;
+    font-family: Helvetica, sans-serif;
 }
 section{
-    max-width: 900px;
+    max-width: 800px;
+    width: 100%;
     margin: 50px auto;
 }
 /* draggable targets */
-[data-draggable="target"]
+ul[data-draggable="target"]
 {
     float:left;
     list-style-type:none;
-    
+    padding: 25px;
     width:100%;
     min-height: 300px;
     height:auto;
     overflow-y:auto;
     
     margin:0 0.5em 0.5em 0;
-    padding:0.5em;
+    // padding:0.5em;
     
-    border:2px solid #888;
+    border:2px solid #e7e7e7;
     border-radius:0.2em;
     
-    background:#ddd;
+    background:#f7f7f7;
     color:#555;
 }
 
@@ -47,17 +49,41 @@ section{
     border-radius:0.2em;
     
     line-height:1.3;
+    cursor: move;
+}
+
+#ballot-wrapper{
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    overflow: auto;
+    min-height: 400px;
+    height:auto;
 }
 
 #ballot-box{
+    padding: 0 25px 25px;
+    width: 400px;
+    margin: 0 auto;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    text-align: center;
 
+    li{
+        border-bottom: 1px solid black;
+        padding: 0.5rem;
+    }
 }
 
 #candidates{
     [data-draggable="item"]{
         display: inline-block;
         border: 1px solid black;
-        width: 25%;
+        width: calc( 30% - 20px );
+        margin: 1.25%;
+        outline: 0;
+        padding: 10px;
         height: 150px;
     }
 }
