@@ -1,16 +1,19 @@
 {
-    "name":"Run the Vote",
-    "version":"0.0.1",
-    "description": "Run Vote from Debug Politics NY January Hackathon",
-    "repository" : "https://github.com/JMartinesGH/nyc1-runthevote",
-    "private": true,
-    "devDependencies": {
-        "gulp": "3.9.1",
-        "gulp-sass": "2.3.2",
-        "gulp-autoprefixer": "3.1.1",
-        "gulp-cssmin": "0.1.7",
-        "gulp-rename": "1.2.2",
-        "gulp-notify": "2.2.0",
-        "gulp-sourcemaps": "2.2.0"
-    }
+  "name": "Run the Vote",
+  "version": "0.0.1",
+  "description": "Run Vote from Debug Politics NY January Hackathon",
+  "repository": "https://github.com/JMartinesGH/nyc1-runthevote",
+  "private": true,
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "3.1.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssmin": "0.1.7",
+    "gulp-jshint": "^2.0.4",
+    "gulp-notify": "2.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "2.2.0",
+    "gulp-uglify": "^2.0.0"
+  }
 }
