@@ -1,2 +1,10 @@
 $rtv_grey_light: #e7e7e7;
 $rtv_white: #f7f7f7;
+
+$desktop-width: 768px;
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}

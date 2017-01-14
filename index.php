@@ -27,7 +27,7 @@
             <!-- <div>
                 <h1>Ballot</h1>
             </div> -->
-            <?php @include "partials/ballot.php"; ?>
+            <?php @include "partials/ballot-flex.php"; ?>
         </div>
 
         <!-- results -->
