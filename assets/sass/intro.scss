@@ -1,0 +1,32 @@
+.hero-text {
+
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1, p {
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-family: $oswald;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 10vh;
+    @include desktop {
+      font-size: 20vh;
+    }
+  }
+
+  p {
+    font-family: $merriweather;
+    width: 90%;
+    line-height: 2;
+    @include desktop {
+      width: 50rem;
+    }
+  }
+
+}
