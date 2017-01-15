@@ -56,7 +56,7 @@ header {
 
   .submit-wrapper {
 
-    button#get-started {
+    #get-started {
       @include btn($blue, $white)
     }
   }

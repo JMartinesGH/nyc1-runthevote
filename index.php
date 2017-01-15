@@ -18,7 +18,10 @@
 <body id="homepage">
    <div id="fullpage">
        <!-- quiz/intro -->
-       <div class="section" data-anchor="madlib" class="active">
+       <div class="section" data-anchor="intro" class="active">
+            <?php @include "partials/intro.php"; ?>
+       </div>
+       <div class="section" data-anchor="madlib" >
            <?php @include "partials/quiz.php"; ?>
        </div>
        <!-- dashboard -->
@@ -158,7 +161,7 @@
        $(document).ready(function() {
            $('#fullpage').fullpage({
                 scrollOverflow: true,
-                anchors: ['madlib', 'dashboard', 'ballot', 'results']
+                anchors: ['intro','madlib', 'dashboard', 'ballot', 'results']
            });
            $.fn.fullpage.setAllowScrolling(false, "down");
            $.fn.fullpage.setKeyboardScrolling(false, 'down');
