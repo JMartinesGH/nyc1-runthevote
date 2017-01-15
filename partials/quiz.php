@@ -1,8 +1,8 @@
-<?php  
-#quiz 
+<?php
+#quiz
 ?>
 <div class="quiz-text">
-<p> Hi, I’m an engaged citizen in 
+<p> Hi, I’m an engaged citizen in
   <span class="answer">
     <select data-key="geo">
       <option></option>
@@ -34,7 +34,7 @@
       <option value="1">idk</option>
       <option value="2">lax</option>
     </select>
-  </span>. On the foreign policy front, I think the US needs to be  
+  </span>. On the foreign policy front, I think the US needs to be
   <span class="answer">
     <select data-key="proIsrael">
       <option></option>
@@ -42,9 +42,9 @@
       <option value="1">whatever</option>
       <option value="2">supportive</option>
     </select>
-  </span> of Israel’s expansion.  
+  </span> of Israel’s expansion.
 </p>
-<p> It’s also important to me that the United States 
+<p> It’s also important to me that the United States
   <span class="answer">
       <select data-key="military">
         <option></option>
@@ -60,7 +60,7 @@
         <option value="1">meh</option>
         <option value="2">increase</option>
       </select>
-  </span> the military budget and  
+  </span> the military budget and
   <span class="answer">
       <select data-key="drones">
         <option></option>
@@ -68,7 +68,7 @@
         <option value="1">whatev</option>
         <option value="2">continue</option>
       </select>
-  </span> the drone program. On the economic front, I feel we should  
+  </span> the drone program. On the economic front, I feel we should
   <span class="answer">
       <select data-key="socialSecurity">
         <option></option>
@@ -76,7 +76,7 @@
         <option value="1">*shrug*</option>
         <option value="-2">invest in</option>
       </select>
-  </span>social security and 
+  </span>social security and
   <span class="answer">
       <select data-key="banks">
         <option></option>
@@ -84,7 +84,7 @@
         <option value="1">meh</option>
         <option value="-2">slightly regulate</option>
       </select>
-  </span>the big banks. Oh, and by the way, marijuana 
+  </span>the big banks. Oh, and by the way, marijuana
   <span class="answer">
       <select data-key="marijuana">
         <option></option>
@@ -110,7 +110,7 @@
       <option value="1">meh</option>
       <option value="2">off</option>
     </select>
-  </span>and I think the US government 
+  </span>and I think the US government
   <span class="answer">
     <select data-key="collectRecords">
       <option></option>
@@ -126,7 +126,7 @@
       <option value="1">meh</option>
       <option value="2">do</option>
     </select>
-  </span>want government to keep religion in the public sphere. Oh, and by the way, I think undocumented immigrants 
+  </span>want government to keep religion in the public sphere. Oh, and by the way, I think undocumented immigrants
   <span class="answer">
     <select data-key="pathway">
       <option></option>
@@ -134,7 +134,7 @@
       <option value="1">idk</option>
       <option value="-2">should</option>
     </select>
-  </span>have a pathway to citizenship. 
+  </span>have a pathway to citizenship.
 </div>
 <div class="submit-wrapper">
 <button id="quiz-submit">Submit</button>
