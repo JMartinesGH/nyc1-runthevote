@@ -1,0 +1,38 @@
+.share-module {
+
+  padding: 4rem;
+
+  p {
+    font-family: $merriweather;
+    color: $blue;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    @include desktop {
+      width: 35rem;
+    }
+  }
+
+  h2 {
+    text-align: center;
+    font-family: $oswald;
+    color: $blue;
+    font-size: 4rem;
+    font-weight: 900;
+    line-height: 2;
+    margin: 0 auto 1%;
+  }
+
+  .share-icons {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 2rem;
+
+    .icons {
+      color: $periwinkle;
+      background-color: $blue;
+      padding: 1rem;
+    }
+  }
+}

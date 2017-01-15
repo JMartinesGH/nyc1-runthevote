@@ -2,7 +2,7 @@ $rtv_grey_light: #e7e7e7;
 $rtv_white: #f7f7f7;
 $periwinkle: #dfddf1;
 $dark-periwinkle: #a9abf0;
-$blue: #001ee1;
+$blue: #0e1ccc;
 $white: #ffffff;
 $mid-blue: #0033ff;
 $blue-shadow: #7b81ef;
@@ -21,7 +21,7 @@ $desktop-width: 768px;
   color: $color;
   background-color: $bg;
   margin: 2rem auto;
-  display: block;
+  display: inline-block;
   padding: 10px 2rem;
   text-transform: uppercase;
   font-family: $oswald;
@@ -29,3 +29,10 @@ $desktop-width: 768px;
   font-size: 1.2rem;
   letter-spacing: 1px;
 }
+<<<<<<< HEAD
+=======
+
+html,body{
+  font-size: 16px;
+}
+>>>>>>> aee58dcc56081ac7258f54d60bc0667e2017e980
