@@ -14,6 +14,8 @@
 
     span.answer {
       border-bottom: solid 3px currentColor;
+      background-color: transparent;
+      transition: background-color 0.5s linear;
     }
   }
 
