@@ -1,2 +1,31 @@
 $rtv_grey_light: #e7e7e7;
 $rtv_white: #f7f7f7;
+$periwinkle: #dfddf1;
+$dark-periwinkle: #a9abf0;
+$blue: #001ee1;
+$white: #ffffff;
+$mid-blue: #0033ff;
+$blue-shadow: #7b81ef;
+$merriweather: 'Merriweather', serif;
+$oswald: 'Oswald', sans-serif;
+
+$desktop-width: 768px;
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+@mixin btn($color, $bg) {
+  color: $color;
+  background-color: $bg;
+  margin: 2rem auto;
+  display: block;
+  padding: 10px 2rem;
+  text-transform: uppercase;
+  font-family: $oswald;
+  border: none;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}

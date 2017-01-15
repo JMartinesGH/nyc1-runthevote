@@ -1,5 +1,6 @@
 [ {
   "name" : "Bernie Sanders",
+  "party": "Democratic Party",
   "questions" : [ {
     "answer" : 2,
     "key" : "Gay Marriage"
@@ -48,6 +49,7 @@
   } ]
 }, {
   "name" : "Darrell Castle",
+  "party": "Constitution Party",
   "questions" : [ {
     "answer" : -2,
     "key" : "Gay Marriage"
@@ -96,6 +98,7 @@
   } ]
 }, {
   "name" : "Donald Trump",
+  "party": "Republican Party",
   "questions" : [ {
     "answer" : 2,
     "key" : "Gay Marriage"
@@ -144,6 +147,7 @@
   } ]
 }, {
   "name" : "Evan McMullin",
+  "party": "Better for America Party",
   "questions" : [ {
     "answer" : 1,
     "key" : "Gay Marriage"
@@ -192,6 +196,7 @@
   } ]
 }, {
   "name" : "Gary Johnson",
+  "party": "Libertarian Party",
   "questions" : [ {
     "answer" : 2,
     "key" : "Gay Marriage"
@@ -240,6 +245,7 @@
   } ]
 }, {
   "name" : "Gloria La Riva",
+  "party": "Peace and Freedom Party",
   "questions" : [ {
     "answer" : 2,
     "key" : "Gay Marriage"
@@ -288,6 +294,7 @@
   } ]
 }, {
   "name" : "Hillary Clinton",
+  "party": "Democratic Party",
   "questions" : [ {
     "answer" : 2,
     "key" : "Gay Marriage"
@@ -336,6 +343,7 @@
   } ]
 }, {
   "name" : "Jill Stein",
+  "party": "Green Party",
   "questions" : [ {
     "answer" : 2,
     "key" : "Gay Marriage"
@@ -384,6 +392,7 @@
   } ]
 }, {
   "name" : "John Kasich",
+  "party": "Republican Party",
   "questions" : [ {
     "answer" : 2,
     "key" : "Gay Marriage"
@@ -432,6 +441,7 @@
   } ]
 }, {
   "name" : "Marco Rubio",
+  "party": "Republican Party",
   "questions" : [ {
     "answer" : -2,
     "key" : "Gay Marriage"
@@ -480,6 +490,7 @@
   } ]
 }, {
   "name" : "Martin O'Malley",
+  "party": "Democratic Party",
   "questions" : [ {
     "answer" : 2,
     "key" : "Gay Marriage"
@@ -528,6 +539,7 @@
   } ]
 }, {
   "name" : "Ted Cruz",
+  "party": "Republican Party",
   "questions" : [ {
     "answer" : -2,
     "key" : "Gay Marriage"

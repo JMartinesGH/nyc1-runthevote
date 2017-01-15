@@ -1,0 +1,47 @@
+header {
+  background-color: $blue;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .hero-text {
+
+    h1, p {
+      margin: 0 auto;
+      color: white;
+    }
+
+    h1 {
+      font-family: $oswald;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 10vh;
+      text-shadow: 2px 2px 0 $dark-periwinkle;
+      @include desktop {
+        font-size: 30vh;
+        text-shadow: 5px 5px 0 $dark-periwinkle;
+      }
+    }
+
+    p {
+      font-family: $merriweather;
+      width: 90%;
+      line-height: 2;
+      -webkit-font-smoothing: antialiased;
+      @include desktop {
+        width: 50rem;
+        text-align: center;
+      }
+    }
+  }
+
+  .submit-wrapper {
+
+    button#get-started {
+      @include btn($blue, $white)
+    }
+  }
+
+}
