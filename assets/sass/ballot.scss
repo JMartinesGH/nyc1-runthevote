@@ -179,6 +179,15 @@ ul[data-draggable="target"]
         z-index: 0;
         background: $rtv_white;
 
+        img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            pointer-events:none;
+            z-index: 0;
+        }
+
         &:before {
           content: " ";
           position: absolute;
