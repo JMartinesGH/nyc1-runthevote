@@ -45,22 +45,22 @@
   <script src="server/questions.js"></script>
   <script type="text/javascript">
 
-    var percent_can = 45;
-    var dis = "negative";
-    var candidate = "<div class='candidate'>"
-        +  "<div class='name'></div>"
-        +  "<div class='percentage'></div>"
-        + "</div>";
+    var format = d3.format(".0%");
 
     function appendCandidate(name, percentage, party){
-      var candidate = "<div class='candidate " + name.toLowerCase().split(" ").join("_") + "'>"
-          +  "<img src='assets/img/jill_stein.png'/>"
+      var shortname = name.toLowerCase().split(" ").join("_");
+      if(name == "Martin O'Malley"){
+        shortname = "martin_o";
+      }
+      console.log(shortname);
+      var candidate = "<div class='candidate " + shortname + "'>"
+          +  "<img src='assets/img/"+shortname+".png'/>"
           +  "<div class='name'>"
           +  "<div class='id_'>"
           +  "<h4>" + name + "</h4>"
           +  "<h4 class='party'>, " + party + "</h4>"
           +  "</div>"
-          +  "<div class='percentage'>" + percentage*100 + "%</div>"
+          +  "<div class='percentage'>" + format(percentage) + "</div>"
           +  "<h3>Match</h3>"
           +  "</div>"
           +  "</div>";
