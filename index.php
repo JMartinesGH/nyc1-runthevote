@@ -12,17 +12,15 @@
    <div id="fullpage">
        <!-- quiz/intro -->
        <div class="section" data-anchor="madlib" class="active">
-           <div>
-               <h1>Madlib/intro</h1>
-               <a href="#dashboard">Submit</a>
-           </div>
+           <?php @include "partials/quiz.php"; ?>
        </div>
        <!-- dashboard -->
        <div class="section" data-anchor="dashboard">
-           <div>
+           <!-- <div>
                <h1>Dashboard</h1>
                <a href="#ballot">Submit</a>
-           </div>
+           </div> -->
+           <?php @include "partials/dashboard.php"; ?>
        </div>
        <!-- ballot -->
        <div class="section" data-anchor="ballot">
@@ -43,6 +41,10 @@
    </div>
 
    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+   <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+   <script src="server/questions.js"></script>
+   <script src="assets/js/c3.min.js"></script>
+   <script src="assets/js/ballot.js"></script>
    <script type="text/javascript" src="assets/js/vendor/jquery.fullPage.min.js"></script>
    <script type="text/javascript">
        $(document).ready(function() {

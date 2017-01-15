@@ -1,10 +1,7 @@
-<?php  
-#ballot 
-?>
 <section id="rtv-ballot">
-    <header>
+    <div id="ballot-header">
       <h1>Make it count</h1>
-    </header>
+    </div>
     <div id="ballot-wrapper">
       <ul id="ballot-box" data-draggable="target">
       </ul>
@@ -60,5 +57,3 @@
       <h3>By ranking candidates we ensure that your vote will matter. <a href="#">Learn More</a></h3>
     </div>
 </section>
-
-<!-- <script src="assets/js/ballot.js"></script> -->
