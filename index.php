@@ -26,11 +26,11 @@
        </div>
        <!-- ballot -->
        <div class="section" data-anchor="ballot">
-           <div>
+           <!-- <div>
                <h1>Ballot</h1>
                <a href="#results">Submit</a>
-           </div>
-           <?php @include "partials/ballot-flex.php"; ?>
+           </div> -->
+           <?php @include "partials/ballot.php"; ?>
        </div>
 
        <!-- results -->

@@ -9,19 +9,19 @@
         margin-top: 0;
     }
 
-    header{
-        h1{
-            font-family: $oswald;
-            font-size: 15vh;
-            margin: 0 0 0 -1%;
-            line-height: 1;
-            color:$blue;
-            font-weight: 900;
-            text-transform: uppercase;
-            text-shadow: 1vh 1vh $blue-shadow;
-        }   
-    }
+}
 
+#ballot-header{
+    h1{
+        font-family: $oswald;
+        font-size: 15vh;
+        margin: 0 0 0 -1%;
+        line-height: 1;
+        color:$blue;
+        font-weight: 900;
+        text-transform: uppercase;
+        text-shadow: 1vh 1vh $blue-shadow;
+    }   
 }
 
 
