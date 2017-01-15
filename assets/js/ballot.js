@@ -29,6 +29,7 @@
     //dragstart event to initiate mouse dragging
     document.addEventListener('dragstart', function(e)
     {
+        // console.log("dragstart");
         //set the item reference to this element
         item = e.target;
         
@@ -49,17 +50,17 @@
             e.preventDefault();
         }
     
-    }, false);  
+    }, false);
 
     //drop event to allow the element to be dropped into valid targets
     document.addEventListener('drop', function(e)
     {
+        onListChanged();
         //if this element is a drop target, move the item here 
         //then prevent default to allow the action (same as dragover)
         if(e.target.getAttribute('data-draggable') == 'target')
         {
             e.target.appendChild(item);
-            
             e.preventDefault();
         }
     
@@ -73,4 +74,12 @@
     
     }, false);
 
-})();   
+    function onListChanged(){
+        var size = $("#ballot-box").children().size();
+        // console.log("size:", size);
+        if(size == 5 ){
+            $("#ballot-submit").addClass("display");
+        }
+    }
+
+})();
