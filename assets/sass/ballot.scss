@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /*move to ballot.scss*/
 /* canvas styles */
 html, body
@@ -6,6 +5,7 @@ html, body
     font:normal normal normal 100%/1.4 tahoma, sans-serif;
     background:#f9f9f9;
     color:#000;
+    background-color: rgb(215, 212, 236);
 }
 body
 {
@@ -13,17 +13,18 @@ body
     font-family: Helvetica, sans-serif;
 }
 #rtv-ballot{
-=======
-#rtv-ballot{
     font-size:0.8em;
     font-family: Helvetica, sans-serif;
->>>>>>> 3ac2d3297d0461278e5f6088a7cb20f383a88958
     max-width: 800px;
     width: 100%;
     margin: 0 auto;
 
     h1{
         margin-top: 0;
+        margin-left: -8%;
+        font-size: 130px;
+        color: rgb(19, 28, 187);
+        text-shadow: 4px 4px rgba(126,142,204,1);
     }
 }
 /* draggable targets */
@@ -36,13 +37,13 @@ ul[data-draggable="target"]
     min-height: 300px;
     height:auto;
     overflow-y:auto;
-    
+
     margin:0 0.5em 0.5em 0;
     // padding:0.5em;
-    
+
     border:2px solid $rtv_grey_light;
     border-radius:0.2em;
-    
+
     background:$rtv_white;
     color:#555;
 }
@@ -52,12 +53,12 @@ ul[data-draggable="target"]
 {
     display:block;
     list-style-type:none;
-    
+
     margin:0 0 2px 0;
     padding:0.2em 0.4em;
-    
+
     border-radius:0.2em;
-    
+
     line-height:1.3;
     cursor: move;
 }
@@ -73,7 +74,8 @@ ul[data-draggable="target"]
 
 #ballot-box{
     padding: 0 25px 25px;
-    width: 400px;
+    width: 960px;
+    height: 600px;
     margin: 0 auto;
     left: 50%;
     position: absolute;
@@ -83,22 +85,19 @@ ul[data-draggable="target"]
     li{
         border-bottom: 1px solid $rtv_grey_light;
         padding: 0.5rem;
-<<<<<<< HEAD
-=======
         display: block;
         width: 100%;
->>>>>>> 3ac2d3297d0461278e5f6088a7cb20f383a88958
     }
 }
 
 #candidates{
     [data-draggable="item"]{
         display: inline-block;
-        border: 1px solid $rtv_grey_light;
+        // border: 1px solid $rtv_grey_light;
         // width: calc( 30% - 20px );
         // margin: 1.25%;
         outline: 0;
         padding: 10px;
-        height: 150px;
+        // height: 150px;
     }
 }
