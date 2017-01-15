@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*move to ballot.scss*/
 /* canvas styles */
 html, body
@@ -12,6 +13,11 @@ body
     font-family: Helvetica, sans-serif;
 }
 #rtv-ballot{
+=======
+#rtv-ballot{
+    font-size:0.8em;
+    font-family: Helvetica, sans-serif;
+>>>>>>> 3ac2d3297d0461278e5f6088a7cb20f383a88958
     max-width: 800px;
     width: 100%;
     margin: 0 auto;
@@ -77,6 +83,11 @@ ul[data-draggable="target"]
     li{
         border-bottom: 1px solid $rtv_grey_light;
         padding: 0.5rem;
+<<<<<<< HEAD
+=======
+        display: block;
+        width: 100%;
+>>>>>>> 3ac2d3297d0461278e5f6088a7cb20f383a88958
     }
 }
 

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 $merriweather: 'Merriweather', serif;
 $oswald: 'Oswald', sans-serif;
 
@@ -48,6 +49,16 @@ $desktop-width: 768px;
     font-family: $merriweather;
     line-height: 2;
     padding-top: 3rem;
+=======
+.quiz-text {
+
+  p {
+    max-width: 90%;
+    font-family: $merriweather;
+    line-height: 2;
+    padding-top: 3rem;
+    font-size: 1rem;
+>>>>>>> 3ac2d3297d0461278e5f6088a7cb20f383a88958
     @include desktop {
       font-size: 2rem;
       margin: 0 auto;
@@ -55,15 +66,22 @@ $desktop-width: 768px;
     }
 
     span.answer {
+<<<<<<< HEAD
       border: solid 3px currentColor;
       padding: 2px 0px 1px 4px;
       font-size: 26px;
       border-radius: 6px;
       margin-right: 5px;
+=======
+      border-bottom: solid 3px currentColor;
+      background-color: transparent;
+      transition: background-color 0.5s linear;
+>>>>>>> 3ac2d3297d0461278e5f6088a7cb20f383a88958
     }
   }
 
   select {
+<<<<<<< HEAD
     font-family: $merriweather;
     border: none;
     font-size: 21px;
@@ -71,6 +89,16 @@ $desktop-width: 768px;
     background-color: transparent;
     text-transform: uppercase;
     -webkit-appearance: menulist-text;
+=======
+    font-size: 1rem;
+    font-family: $merriweather;
+    border: none;
+    font-weight: 700;
+    background-color: transparent;
+    @include desktop {
+      font-size: 2rem;
+    }
+>>>>>>> 3ac2d3297d0461278e5f6088a7cb20f383a88958
   }
 
   select:focus {

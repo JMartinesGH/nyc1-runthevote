@@ -1,2 +1,16 @@
 $rtv_grey_light: #e7e7e7;
+<<<<<<< HEAD
 $rtv_white: #f7f7f7;
+=======
+$rtv_white: #f7f7f7;
+$merriweather: 'Merriweather', serif;
+$oswald: 'Oswald', sans-serif;
+
+$desktop-width: 768px;
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+>>>>>>> 3ac2d3297d0461278e5f6088a7cb20f383a88958
