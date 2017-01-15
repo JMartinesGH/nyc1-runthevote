@@ -6,6 +6,23 @@ header {
   justify-content: center;
   align-items: center;
 
+  .social-icons {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+
+    .icon-social-facebook {
+      color: $white;
+      font-size: 2rem
+    }
+
+    .icon-social-twitter {
+      color: $white;
+      font-size: 2rem
+    }
+
+  }
+
   .hero-text {
 
     h1, p {

@@ -1,0 +1,43 @@
+footer {
+  padding: 1rem;
+	background-color: $blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @include desktop {
+    height: 100px;
+    flex-direction: row;
+  }
+
+  .debug-politics {
+    flex: 1 0 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .logo img {
+      width: 3rem;
+      padding: 1rem;
+    }
+
+    .name {
+      font-family: $oswald;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: $white;
+      font-size: 1.5rem;
+      @include desktop {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  .team {
+    font-family: $merriweather;
+    color: $white;
+    font-size: 1rem;
+    line-height: 1.4;
+    flex: 1 0 50%;
+  }
+}
