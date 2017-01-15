@@ -13,7 +13,10 @@
     }
 
     span.answer {
-      border-bottom: solid 3px currentColor;
+      border-bottom: solid 1px currentColor;
+      @include desktop {
+        border-bottom: solid 3px currentColor;
+      }
     }
   }
 
