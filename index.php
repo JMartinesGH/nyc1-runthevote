@@ -151,13 +151,16 @@
     }
 
   </script>
+   <script type="text/javascript" src="assets/js/vendor/scrolloverflow.min.js"></script>
    <script type="text/javascript" src="assets/js/vendor/jquery.fullPage.min.js"></script>
    <script type="text/javascript">
        $(document).ready(function() {
-           $('#fullpage').fullpage();
+           $('#fullpage').fullpage({
+                scrollOverflow: true,
+                anchors: ['madlib', 'dashboard', 'ballot', 'results']
+           });
            $.fn.fullpage.setAllowScrolling(false, "down");
            $.fn.fullpage.setKeyboardScrolling(false, 'down');
-           anchors: ['madlib', 'dashboard', 'ballot', 'results']
        });
    </script>
    <script src="assets/js/app.js"></script>
