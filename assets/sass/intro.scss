@@ -18,8 +18,10 @@ header {
       text-transform: uppercase;
       text-align: center;
       font-size: 10vh;
+      text-shadow: 2px 2px 0 $dark-periwinkle;
       @include desktop {
         font-size: 30vh;
+        text-shadow: 5px 5px 0 $dark-periwinkle;
       }
     }
 
@@ -38,9 +40,7 @@ header {
   .submit-wrapper {
 
     button#get-started {
-      color: $blue;
-      background-color: white;
-      @include btn;
+      @include btn($blue, $white)
     }
   }
 

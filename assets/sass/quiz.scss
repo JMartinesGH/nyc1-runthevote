@@ -67,8 +67,6 @@ body {
 .submit-wrapper {
 
   button#quiz-submit {
-    background: $blue;
-    color: white;
-    @include btn;
+    @include btn($white, $blue)
   }
 }
