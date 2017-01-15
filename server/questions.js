@@ -15,49 +15,49 @@ var QUESTION_WEIGHTS = [
 
 var user = [ {
     "answer" : 2,
-    "key" : "gayMarriage"
-  }, {
-    "answer" : 1,
-    "key" : "obamacare"
-  }, {
-    "answer" : 1,
-    "key" : "gunLaws"
-  }, {
-    "answer" : -2,
-    "key" : "proIsrael"
-  }, {
-    "answer" : -2,
-    "key" : "military"
-  }, {
-    "answer" : -2,
-    "key" : "armyBudget"
-  }, {
-    "answer" : 1,
-    "key" : "drones"
-  }, {
-    "answer" : 1,
-    "key" : "socialSecurity"
-  }, {
-    "answer" : 1,
-    "key" : "banks"
-  }, {
-    "answer" : 1,
-    "key" : "marijuana"
+    "key" : "Gay Marriage"
   }, {
     "answer" : 2,
-    "key" : "assaultRifles"
+    "key" : "Obamacare"
   }, {
-    "answer" : 1,
-    "key" : "bigGov"
-  }, {
-    "answer" : -2,
-    "key" : "collectRecords"
+    "answer" : 2,
+    "key" : "Gun Laws"
   }, {
     "answer" : -2,
-    "key" : "religion"
+    "key" : "Pro Israel"
   }, {
     "answer" : -2,
-    "key" : "pathway"
+    "key" : "Military"
+  }, {
+    "answer" : -2,
+    "key" : "Army Budget"
+  }, {
+    "answer" : -2,
+    "key" : "Drones"
+  }, {
+    "answer" : 2,
+    "key" : "Social Security"
+  }, {
+    "answer" : -2,
+    "key" : "Banks"
+  }, {
+    "answer" : 2,
+    "key" : "Marijuana"
+  }, {
+    "answer" : -2,
+    "key" : "Assault Rifles"
+  }, {
+    "answer" : 2,
+    "key" : "Big Gov"
+  }, {
+    "answer" : -2,
+    "key" : "Collect Records"
+  }, {
+    "answer" : 2,
+    "key" : "Religion"
+  }, {
+    "answer" : 2,
+    "key" : "Pathway"
   } ]
 
 var politicians =[ {
@@ -65,590 +65,591 @@ var politicians =[ {
   "party": "Democratic Party",
   "questions" : [ {
     "answer" : 2,
-    "key" : "gayMarriage"
+    "key" : "Gay Marriage"
   }, {
     "answer" : 2,
-    "key" : "obamacare"
+    "key" : "Obamacare"
   }, {
     "answer" : 2,
-    "key" : "gunLaws"
+    "key" : "Gun Laws"
   }, {
     "answer" : -2,
-    "key" : "proIsrael"
+    "key" : "Pro Israel"
   }, {
     "answer" : -2,
-    "key" : "military"
+    "key" : "Military"
   }, {
     "answer" : -2,
-    "key" : "armyBudget"
+    "key" : "Army Budget"
   }, {
     "answer" : -2,
-    "key" : "drones"
+    "key" : "Drones"
   }, {
     "answer" : 2,
-    "key" : "socialSecurity"
+    "key" : "Social Security"
   }, {
     "answer" : -2,
-    "key" : "banks"
+    "key" : "Banks"
   }, {
     "answer" : 2,
-    "key" : "marijuana"
+    "key" : "Marijuana"
   }, {
     "answer" : -2,
-    "key" : "assaultRifles"
+    "key" : "Assault Rifles"
   }, {
     "answer" : 2,
-    "key" : "bigGov"
+    "key" : "Big Gov"
   }, {
     "answer" : -2,
-    "key" : "collectRecords"
+    "key" : "Collect Records"
   }, {
     "answer" : 2,
-    "key" : "religion"
+    "key" : "Religion"
   }, {
     "answer" : 2,
-    "key" : "pathway"
+    "key" : "Pathway"
   } ]
 }, {
   "name" : "Darrell Castle",
   "party": "Constitution Party",
   "questions" : [ {
     "answer" : -2,
-    "key" : "gayMarriage"
+    "key" : "Gay Marriage"
   }, {
     "answer" : -2,
-    "key" : "obamacare"
+    "key" : "Obamacare"
   }, {
     "answer" : -2,
-    "key" : "gunLaws"
+    "key" : "Gun Laws"
   }, {
     "answer" : 2,
-    "key" : "proIsrael"
+    "key" : "Pro Israel"
   }, {
     "answer" : -2,
-    "key" : "military"
+    "key" : "Military"
   }, {
     "answer" : 1,
-    "key" : "armyBudget"
+    "key" : "Army Budget"
   }, {
     "answer" : 1,
-    "key" : "drones"
+    "key" : "Drones"
   }, {
     "answer" : -2,
-    "key" : "socialSecurity"
+    "key" : "Social Security"
   }, {
     "answer" : 2,
-    "key" : "banks"
+    "key" : "Banks"
   }, {
     "answer" : 1,
-    "key" : "marijuana"
+    "key" : "Marijuana"
   }, {
     "answer" : 2,
-    "key" : "assaultRifles"
+    "key" : "Assault Rifles"
   }, {
     "answer" : -2,
-    "key" : "bigGov"
+    "key" : "Big Gov"
   }, {
     "answer" : 1,
-    "key" : "collectRecords"
+    "key" : "Collect Records"
   }, {
     "answer" : -2,
-    "key" : "religion"
+    "key" : "Religion"
   }, {
     "answer" : -2,
-    "key" : "pathway"
+    "key" : "Pathway"
   } ]
 }, {
   "name" : "Donald Trump",
   "party": "Republican Party",
   "questions" : [ {
     "answer" : 2,
-    "key" : "gayMarriage"
+    "key" : "Gay Marriage"
   }, {
     "answer" : -2,
-    "key" : "obamacare"
+    "key" : "Obamacare"
   }, {
     "answer" : -2,
-    "key" : "gunLaws"
+    "key" : "Gun Laws"
   }, {
     "answer" : 2,
-    "key" : "proIsrael"
+    "key" : "Pro Israel"
   }, {
     "answer" : 2,
-    "key" : "military"
+    "key" : "Military"
   }, {
     "answer" : 2,
-    "key" : "armyBudget"
+    "key" : "Army Budget"
   }, {
     "answer" : 2,
-    "key" : "drones"
+    "key" : "Drones"
   }, {
     "answer" : -2,
-    "key" : "socialSecurity"
+    "key" : "Social Security"
   }, {
     "answer" : 2,
-    "key" : "banks"
+    "key" : "Banks"
   }, {
     "answer" : 1,
-    "key" : "marijuana"
+    "key" : "Marijuana"
   }, {
     "answer" : 2,
-    "key" : "assaultRifles"
+    "key" : "Assault Rifles"
   }, {
     "answer" : 2,
-    "key" : "bigGov"
+    "key" : "Big Gov"
   }, {
     "answer" : 2,
-    "key" : "collectRecords"
+    "key" : "Collect Records"
   }, {
     "answer" : -2,
-    "key" : "religion"
+    "key" : "Religion"
   }, {
     "answer" : -2,
-    "key" : "pathway"
+    "key" : "Pathway"
   } ]
 }, {
   "name" : "Evan McMullin",
   "party": "Better for America Party",
   "questions" : [ {
     "answer" : 1,
-    "key" : "gayMarriage"
+    "key" : "Gay Marriage"
   }, {
     "answer" : -2,
-    "key" : "obamacare"
+    "key" : "Obamacare"
   }, {
     "answer" : -2,
-    "key" : "gunLaws"
+    "key" : "Gun Laws"
   }, {
     "answer" : 2,
-    "key" : "proIsrael"
+    "key" : "Pro Israel"
   }, {
     "answer" : -2,
-    "key" : "military"
+    "key" : "Military"
   }, {
     "answer" : 2,
-    "key" : "armyBudget"
+    "key" : "Army Budget"
   }, {
     "answer" : 2,
-    "key" : "drones"
+    "key" : "Drones"
   }, {
     "answer" : 1,
-    "key" : "socialSecurity"
+    "key" : "Social Security"
   }, {
     "answer" : 2,
-    "key" : "banks"
+    "key" : "Banks"
   }, {
     "answer" : -2,
-    "key" : "marijuana"
+    "key" : "Marijuana"
   }, {
     "answer" : 2,
-    "key" : "assaultRifles"
+    "key" : "Assault Rifles"
   }, {
     "answer" : -2,
-    "key" : "bigGov"
+    "key" : "Big Gov"
   }, {
     "answer" : -2,
-    "key" : "collectRecords"
+    "key" : "Collect Records"
   }, {
     "answer" : -2,
-    "key" : "religion"
+    "key" : "Religion"
   }, {
     "answer" : 1,
-    "key" : "pathway"
+    "key" : "Pathway"
   } ]
 }, {
   "name" : "Gary Johnson",
   "party": "Libertarian Party",
   "questions" : [ {
     "answer" : 2,
-    "key" : "gayMarriage"
+    "key" : "Gay Marriage"
   }, {
     "answer" : -2,
-    "key" : "obamacare"
+    "key" : "Obamacare"
   }, {
     "answer" : -2,
-    "key" : "gunLaws"
+    "key" : "Gun Laws"
   }, {
     "answer" : 1,
-    "key" : "proIsrael"
+    "key" : "Pro Israel"
   }, {
     "answer" : -2,
-    "key" : "military"
+    "key" : "Military"
   }, {
     "answer" : -2,
-    "key" : "armyBudget"
+    "key" : "Army Budget"
   }, {
     "answer" : -2,
-    "key" : "drones"
+    "key" : "Drones"
   }, {
     "answer" : -2,
-    "key" : "socialSecurity"
+    "key" : "Social Security"
   }, {
     "answer" : 2,
-    "key" : "banks"
+    "key" : "Banks"
   }, {
     "answer" : 2,
-    "key" : "marijuana"
+    "key" : "Marijuana"
   }, {
     "answer" : 2,
-    "key" : "assaultRifles"
+    "key" : "Assault Rifles"
   }, {
     "answer" : -2,
-    "key" : "bigGov"
+    "key" : "Big Gov"
   }, {
     "answer" : -2,
-    "key" : "collectRecords"
+    "key" : "Collect Records"
   }, {
     "answer" : 1,
-    "key" : "religion"
+    "key" : "Religion"
   }, {
     "answer" : 2,
-    "key" : "pathway"
+    "key" : "Pathway"
   } ]
 }, {
   "name" : "Gloria La Riva",
   "party": "Peace and Freedom Party",
   "questions" : [ {
     "answer" : 2,
-    "key" : "gayMarriage"
+    "key" : "Gay Marriage"
   }, {
     "answer" : 2,
-    "key" : "obamacare"
+    "key" : "Obamacare"
   }, {
     "answer" : -2,
-    "key" : "gunLaws"
+    "key" : "Gun Laws"
   }, {
     "answer" : -2,
-    "key" : "proIsrael"
+    "key" : "Pro Israel"
   }, {
     "answer" : -2,
-    "key" : "military"
+    "key" : "Military"
   }, {
     "answer" : -2,
-    "key" : "armyBudget"
+    "key" : "Army Budget"
   }, {
     "answer" : -2,
-    "key" : "drones"
+    "key" : "Drones"
   }, {
     "answer" : 2,
-    "key" : "socialSecurity"
+    "key" : "Social Security"
   }, {
     "answer" : -2,
-    "key" : "banks"
+    "key" : "Banks"
   }, {
     "answer" : 2,
-    "key" : "marijuana"
+    "key" : "Marijuana"
   }, {
     "answer" : 2,
-    "key" : "assaultRifles"
+    "key" : "Assault Rifles"
   }, {
     "answer" : 2,
-    "key" : "bigGov"
+    "key" : "Big Gov"
   }, {
     "answer" : -2,
-    "key" : "collectRecords"
+    "key" : "Collect Records"
   }, {
     "answer" : 2,
-    "key" : "religion"
+    "key" : "Religion"
   }, {
     "answer" : 2,
-    "key" : "pathway"
+    "key" : "Pathway"
   } ]
 }, {
   "name" : "Hillary Clinton",
   "party": "Democratic Party",
   "questions" : [ {
     "answer" : 2,
-    "key" : "gayMarriage"
+    "key" : "Gay Marriage"
   }, {
     "answer" : 2,
-    "key" : "obamacare"
+    "key" : "Obamacare"
   }, {
     "answer" : 2,
-    "key" : "gunLaws"
+    "key" : "Gun Laws"
   }, {
     "answer" : 1,
-    "key" : "proIsrael"
+    "key" : "Pro Israel"
   }, {
     "answer" : 2,
-    "key" : "military"
+    "key" : "Military"
   }, {
     "answer" : 1,
-    "key" : "armyBudget"
+    "key" : "Army Budget"
   }, {
     "answer" : 2,
-    "key" : "drones"
+    "key" : "Drones"
   }, {
     "answer" : 2,
-    "key" : "socialSecurity"
+    "key" : "Social Security"
   }, {
     "answer" : 1,
-    "key" : "banks"
+    "key" : "Banks"
   }, {
     "answer" : 1,
-    "key" : "marijuana"
+    "key" : "Marijuana"
   }, {
     "answer" : -2,
-    "key" : "assaultRifles"
+    "key" : "Assault Rifles"
   }, {
     "answer" : 2,
-    "key" : "bigGov"
+    "key" : "Big Gov"
   }, {
     "answer" : -2,
-    "key" : "collectRecords"
+    "key" : "Collect Records"
   }, {
     "answer" : -2,
-    "key" : "religion"
+    "key" : "Religion"
   }, {
     "answer" : 2,
-    "key" : "pathway"
+    "key" : "Pathway"
   } ]
 }, {
   "name" : "Jill Stein",
   "party": "Green Party",
   "questions" : [ {
     "answer" : 2,
-    "key" : "gayMarriage"
+    "key" : "Gay Marriage"
   }, {
     "answer" : 2,
-    "key" : "obamacare"
+    "key" : "Obamacare"
   }, {
     "answer" : 2,
-    "key" : "gunLaws"
+    "key" : "Gun Laws"
   }, {
     "answer" : -2,
-    "key" : "proIsrael"
+    "key" : "Pro Israel"
   }, {
     "answer" : -2,
-    "key" : "military"
+    "key" : "Military"
   }, {
     "answer" : -2,
-    "key" : "armyBudget"
+    "key" : "Army Budget"
   }, {
     "answer" : -2,
-    "key" : "drones"
+    "key" : "Drones"
   }, {
     "answer" : 2,
-    "key" : "socialSecurity"
+    "key" : "Social Security"
   }, {
     "answer" : -2,
-    "key" : "banks"
+    "key" : "Banks"
   }, {
     "answer" : 2,
-    "key" : "marijuana"
+    "key" : "Marijuana"
   }, {
     "answer" : -2,
-    "key" : "assaultRifles"
+    "key" : "Assault Rifles"
   }, {
     "answer" : 2,
-    "key" : "bigGov"
+    "key" : "Big Gov"
   }, {
     "answer" : -2,
-    "key" : "collectRecords"
+    "key" : "Collect Records"
   }, {
     "answer" : 2,
-    "key" : "religion"
+    "key" : "Religion"
   }, {
     "answer" : 2,
-    "key" : "pathway"
+    "key" : "Pathway"
   } ]
 }, {
   "name" : "John Kasich",
   "party": "Republican Party",
   "questions" : [ {
     "answer" : 2,
-    "key" : "gayMarriage"
+    "key" : "Gay Marriage"
   }, {
     "answer" : -2,
-    "key" : "obamacare"
+    "key" : "Obamacare"
   }, {
     "answer" : -2,
-    "key" : "gunLaws"
+    "key" : "Gun Laws"
   }, {
     "answer" : 2,
-    "key" : "proIsrael"
+    "key" : "Pro Israel"
   }, {
     "answer" : 1,
-    "key" : "military"
+    "key" : "Military"
   }, {
     "answer" : 1,
-    "key" : "armyBudget"
+    "key" : "Army Budget"
   }, {
     "answer" : 2,
-    "key" : "drones"
+    "key" : "Drones"
   }, {
     "answer" : -2,
-    "key" : "socialSecurity"
+    "key" : "Social Security"
   }, {
     "answer" : 2,
-    "key" : "banks"
+    "key" : "Banks"
   }, {
     "answer" : -2,
-    "key" : "marijuana"
+    "key" : "Marijuana"
   }, {
     "answer" : 1,
-    "key" : "assaultRifles"
+    "key" : "Assault Rifles"
   }, {
     "answer" : -2,
-    "key" : "bigGov"
+    "key" : "Big Gov"
   }, {
     "answer" : -2,
-    "key" : "collectRecords"
+    "key" : "Collect Records"
   }, {
     "answer" : -2,
-    "key" : "religion"
+    "key" : "Religion"
   }, {
     "answer" : -2,
-    "key" : "pathway"
+    "key" : "Pathway"
   } ]
 }, {
   "name" : "Marco Rubio",
   "party": "Republican Party",
   "questions" : [ {
     "answer" : -2,
-    "key" : "gayMarriage"
+    "key" : "Gay Marriage"
   }, {
     "answer" : -2,
-    "key" : "obamacare"
+    "key" : "Obamacare"
   }, {
     "answer" : -2,
-    "key" : "gunLaws"
+    "key" : "Gun Laws"
   }, {
     "answer" : 2,
-    "key" : "proIsrael"
+    "key" : "Pro Israel"
   }, {
     "answer" : 2,
-    "key" : "military"
+    "key" : "Military"
   }, {
     "answer" : 2,
-    "key" : "armyBudget"
+    "key" : "Army Budget"
   }, {
     "answer" : 2,
-    "key" : "drones"
+    "key" : "Drones"
   }, {
     "answer" : 1,
-    "key" : "socialSecurity"
+    "key" : "Social Security"
   }, {
     "answer" : 2,
-    "key" : "banks"
+    "key" : "Banks"
   }, {
     "answer" : -2,
-    "key" : "marijuana"
+    "key" : "Marijuana"
   }, {
     "answer" : 2,
-    "key" : "assaultRifles"
+    "key" : "Assault Rifles"
   }, {
     "answer" : -2,
-    "key" : "bigGov"
+    "key" : "Big Gov"
   }, {
     "answer" : 2,
-    "key" : "collectRecords"
+    "key" : "Collect Records"
   }, {
     "answer" : -2,
-    "key" : "religion"
+    "key" : "Religion"
   }, {
     "answer" : -2,
-    "key" : "pathway"
+    "key" : "Pathway"
   } ]
 }, {
   "name" : "Martin O'Malley",
   "party": "Democratic Party",
   "questions" : [ {
     "answer" : 2,
-    "key" : "gayMarriage"
+    "key" : "Gay Marriage"
   }, {
     "answer" : 2,
-    "key" : "obamacare"
+    "key" : "Obamacare"
   }, {
     "answer" : 2,
-    "key" : "gunLaws"
+    "key" : "Gun Laws"
   }, {
     "answer" : 1,
-    "key" : "proIsrael"
+    "key" : "Pro Israel"
   }, {
     "answer" : 2,
-    "key" : "military"
+    "key" : "Military"
   }, {
     "answer" : 2,
-    "key" : "armyBudget"
+    "key" : "Army Budget"
   }, {
     "answer" : -2,
-    "key" : "drones"
+    "key" : "Drones"
   }, {
     "answer" : 2,
-    "key" : "socialSecurity"
+    "key" : "Social Security"
   }, {
     "answer" : -2,
-    "key" : "banks"
+    "key" : "Banks"
   }, {
     "answer" : -2,
-    "key" : "marijuana"
+    "key" : "Marijuana"
   }, {
     "answer" : 2,
-    "key" : "assaultRifles"
+    "key" : "Assault Rifles"
   }, {
     "answer" : 2,
-    "key" : "bigGov"
+    "key" : "Big Gov"
   }, {
     "answer" : -2,
-    "key" : "collectRecords"
+    "key" : "Collect Records"
   }, {
     "answer" : 1,
-    "key" : "religion"
+    "key" : "Religion"
   }, {
     "answer" : 2,
-    "key" : "pathway"
+    "key" : "Pathway"
   } ]
 }, {
   "name" : "Ted Cruz",
   "party": "Republican Party",
   "questions" : [ {
     "answer" : -2,
-    "key" : "gayMarriage"
+    "key" : "Gay Marriage"
   }, {
     "answer" : -2,
-    "key" : "obamacare"
+    "key" : "Obamacare"
   }, {
     "answer" : -2,
-    "key" : "gunLaws"
+    "key" : "Gun Laws"
   }, {
     "answer" : 2,
-    "key" : "proIsrael"
+    "key" : "Pro Israel"
   }, {
     "answer" : 2,
-    "key" : "military"
+    "key" : "Military"
   }, {
     "answer" : 2,
-    "key" : "armyBudget"
+    "key" : "Army Budget"
   }, {
     "answer" : 2,
-    "key" : "drones"
+    "key" : "Drones"
   }, {
     "answer" : -2,
-    "key" : "socialSecurity"
+    "key" : "Social Security"
   }, {
     "answer" : 1,
-    "key" : "banks"
+    "key" : "Banks"
   }, {
     "answer" : -2,
-    "key" : "marijuana"
+    "key" : "Marijuana"
   }, {
     "answer" : 2,
-    "key" : "assaultRifles"
+    "key" : "Assault Rifles"
   }, {
     "answer" : -2,
-    "key" : "bigGov"
+    "key" : "Big Gov"
   }, {
     "answer" : -2,
-    "key" : "collectRecords"
+    "key" : "Collect Records"
   }, {
     "answer" : -2,
-    "key" : "religion"
+    "key" : "Religion"
   }, {
     "answer" : -2,
-    "key" : "pathway"
+    "key" : "Pathway"
   } ]
 } ]
+
 
 
 

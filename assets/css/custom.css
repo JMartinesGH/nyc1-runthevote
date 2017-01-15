@@ -1,12 +1,12 @@
 .col-lg-12.col-md-12.col-sm-12.col-xs-12, .row, .container-fluid {
     padding: 0 0 0 0;
+    background:#dfddf1;
 }
 
 #dash {
     text-align: center;
     margin: 30px 0 0 0;
     padding: 50px 50px;
-    background:#dfddf1;
 }
 
 #dash h1 {
@@ -132,7 +132,7 @@
     display: block;
     position: absolute;
     bottom: 25px;
-    right: 20px;
+    right: 45px;
     opacity: 0.75;
 }
 
@@ -145,13 +145,13 @@
     color: #192ae8;
     opacity: 0.8;
     font-size: 16px;
-    padding-left: 5px;
+    padding-left: 2px;
 }
 
 .candidate.active .card li{
     display: block;
     position: relative;
-    width: 120px;
+    width: 114px;
 }
 
 .candidate.active .card .topic {
@@ -164,7 +164,7 @@
     background-size: contain !important;
     display: inline-block;
     vertical-align: middle;
-    margin-right: 10px;
+    margin-right: 5px;
     width: 12px;
     height: 12px;
     position: relative;
