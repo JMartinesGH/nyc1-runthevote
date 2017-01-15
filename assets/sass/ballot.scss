@@ -90,6 +90,12 @@ ul[data-draggable="target"]
     overflow:hidden;
     counter-reset: rtv-ballot-counter;
 
+    &.empty{
+        background: $rtv_white url('../img/drag_instructions.png') no-repeat;
+        background-position: center center;
+        background-size: 40%;
+    }
+
     li{
         border-bottom: 1px solid $rtv_grey_light;
         padding: 0 1.5rem;

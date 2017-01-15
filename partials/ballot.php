@@ -3,7 +3,7 @@
       <h1>Make it count</h1>
     </div>
     <div id="ballot-wrapper">
-      <ul id="ballot-box" data-draggable="target">
+      <ul id="ballot-box" data-draggable="target" class="empty">
       </ul>
     </div>
     <div id="ballot-message">

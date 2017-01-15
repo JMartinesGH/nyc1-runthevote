@@ -75,10 +75,16 @@
     }, false);
 
     function onListChanged(){
-        var size = $("#ballot-box").children().size();
+        var size = $("#ballot-box").children().size()+1;
         // console.log("size:", size);
-        if(size == 5 ){
+        if( size == 6 ){
             $("#ballot-submit").addClass("display");
+        }
+
+        if( size == 0 ){
+            $("#ballot-box").addClass('empty');
+        }else{
+            $("#ballot-box").removeClass('empty');
         }
     }
 
