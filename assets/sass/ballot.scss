@@ -61,6 +61,7 @@ ul[data-draggable="target"]
     
     line-height:1.3;
     cursor: move;
+    cursor: grab;
 }
 
 #ballot-wrapper{
@@ -178,6 +179,15 @@ ul[data-draggable="target"]
         position: relative;
         z-index: 0;
         background: $rtv_white;
+
+        img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            pointer-events:none;
+            z-index: 0;
+        }
 
         &:before {
           content: " ";

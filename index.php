@@ -5,6 +5,7 @@
 <head>
    <link rel="stylesheet" type="text/css" href="assets/css/vendor/jquery.fullPage.css" />
    <!-- Bootstrap core CSS -->
+   <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700,900|Oswald:400,700" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-theme.min.css">
   <link rel="stylesheet" type="text/css" href="assets/css/c3.min.css">
@@ -17,7 +18,10 @@
 <body id="homepage">
    <div id="fullpage">
        <!-- quiz/intro -->
-       <div class="section" data-anchor="madlib" class="active">
+       <div class="section" data-anchor="intro" class="active">
+            <?php @include "partials/intro.php"; ?>
+       </div>
+       <div class="section" data-anchor="madlib" >
            <?php @include "partials/quiz.php"; ?>
        </div>
        <!-- dashboard -->
@@ -39,10 +43,12 @@
 
        <!-- results -->
        <div class="section" data-anchor="results">
-           <div>
+           <!-- <div>
                <h1>Results</h1>
                <a href="#">Submit</a>
-           </div>
+           </div> -->
+           <?php @include "partials/results.php"; ?>
+           <?php @include "partials/footer.php"; ?>
        </div>
    </div>
 
@@ -52,14 +58,16 @@
    <script src="server/questions.js"></script>
    <script src="assets/js/c3.min.js"></script>
    <script src="assets/js/ballot.js"></script>
-
+   <script type="text/javascript" src="assets/js/vendor/scrolloverflow.min.js"></script>
    <script type="text/javascript" src="assets/js/vendor/jquery.fullPage.min.js"></script>
    <script type="text/javascript">
        $(document).ready(function() {
-           $('#fullpage').fullpage();
+           $('#fullpage').fullpage({
+                scrollOverflow: true,
+                anchors: ['intro','madlib', 'dashboard', 'ballot', 'results']
+           });
            $.fn.fullpage.setAllowScrolling(false, "down");
            $.fn.fullpage.setKeyboardScrolling(false, 'down');
-           anchors: ['madlib', 'dashboard', 'ballot', 'results']
        });
    </script>
    <script src="assets/js/app.js"></script>
