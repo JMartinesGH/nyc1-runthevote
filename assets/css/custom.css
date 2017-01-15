@@ -89,9 +89,9 @@
     position: relative;
     top: -5px;
     left: -5px;
-    -webkit-box-shadow: 10px 10px 10px 0px rgba(209,209,209,1);
-    -moz-box-shadow: 10px 10px 10px 0px rgba(209,209,209,1);
-    box-shadow: 10px 10px 10px 0px rgba(209,209,209,1);
+    -webkit-box-shadow: 10px 10px 10px 0px #192AE8;
+    -moz-box-shadow: 10px 10px 10px 0px #192AE8;
+    box-shadow: 10px 10px 10px 0px #192AE8;
 }
 
 .candidate.active .name {
@@ -131,8 +131,9 @@
 .candidate.active .card{
     display: block;
     position: absolute;
-    bottom: 10px;
-    right: 50px;
+    bottom: 25px;
+    right: 20px;
+    opacity: 0.75;
 }
 
 .candidate.active .card ul {
@@ -144,18 +145,33 @@
     color: #192ae8;
     opacity: 0.8;
     font-size: 16px;
+    padding-left: 5px;
 }
 
-.candidate.active .card .topic{
+.candidate.active .card li{
     display: block;
     position: relative;
+    width: 120px;
 }
 
-.candidate.active .card .topic img {
+.candidate.active .card .topic {
+    width: 100%;
+    display: block;
+    text-align: left;
+}
+
+.candidate.active .card .topic .sup {
+    background-size: contain !important;
     display: inline-block;
-    float: left;
     vertical-align: middle;
-    margin-right: 15px;
-    width: 20px;
-    height: 20px;
+    margin-right: 10px;
+    width: 12px;
+    height: 12px;
+    position: relative;
+    top: 0;
+}
+
+.candidate.active .card .topic p {
+    display: inline-block;
+    font-size: 12px;
 }
