@@ -8,38 +8,38 @@
     </div>
 
     <div id="candidates-wrapper">
-      <ul id="candidates" data-draggable="target">
-        <li class="candidate " data-draggable="item">
+      <ul id="ballot-canidates" data-draggable="target">
+        <li class="ballot-candidate " data-draggable="item">
             <div class='image-wrapper'>
               <!-- img -->
             </div>
             <h2>Candidate</h2>
         </li>
-        <li class="candidate " data-draggable="item">
+        <li class="ballot-candidate " data-draggable="item">
             <div class='image-wrapper'>
               <!-- img -->
             </div>
             <h2>Candidate</h2>
         </li>
-        <li class="candidate " data-draggable="item">
+        <li class="ballot-candidate " data-draggable="item">
             <div class='image-wrapper'>
               <!-- img -->
             </div>
             <h2>Candidate</h2>
         </li>
-        <li class="candidate " data-draggable="item">
+        <li class="ballot-candidate " data-draggable="item">
             <div class='image-wrapper'>
               <!-- img -->
             </div>
             <h2>Candidate</h2>
         </li>
-        <li class="candidate " data-draggable="item">
+        <li class="ballot-candidate " data-draggable="item">
             <div class='image-wrapper'>
               <!-- img -->
             </div>
             <h2>Candidate</h2>
         </li>
-        <li class="candidate " data-draggable="item">
+        <li class="ballot-candidate " data-draggable="item">
             <div class='image-wrapper'>
               <!-- img -->
             </div>
