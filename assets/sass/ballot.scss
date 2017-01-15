@@ -39,7 +39,7 @@ body
         font-weight: 900;
         text-transform: uppercase;
         text-shadow: 1vh 1vh $blue-shadow;
-    }   
+    }
 }
 
 
@@ -64,13 +64,13 @@ ul[data-draggable="target"]
 
     background:$rtv_white;
 =======
-    
+
     margin:0 auto;
     // padding:0.5em;
-    
+
     // border:2px solid $rtv_grey_light;
     border-radius:0.2em;
-    
+
     // background:$rtv_white;
     text-align: center;
 >>>>>>> 6fa08812bc0d5e264f371ca10df211f5fabdc644
@@ -210,6 +210,11 @@ ul[data-draggable="target"]
 
 img {
   box-shadow: 10px 10px 5px 0px rgba(27,41,194,1);
+  img {
+  box-shadow: 10px 10px 5px 0px #1b29c2;
+  height: 50px;
+  width: 50px;
+}
 }
 =======
 #candidates-wrapper{

@@ -16,8 +16,6 @@ $desktop-width: 768px;
     @content;
   }
 }
-<<<<<<< HEAD
-=======
 
 @mixin btn($color, $bg) {
   color: $color;
@@ -31,4 +29,3 @@ $desktop-width: 768px;
   font-size: 1.2rem;
   letter-spacing: 1px;
 }
->>>>>>> 6fa08812bc0d5e264f371ca10df211f5fabdc644
