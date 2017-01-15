@@ -67,15 +67,8 @@ body {
 .submit-wrapper {
 
   button#quiz-submit {
-    margin: 2rem auto;
-    display: block;
-    padding: 10px 2rem;
     background: $blue;
     color: white;
-    text-transform: uppercase;
-    font-family: $oswald;
-    border: none;
-    font-size: 1.2rem;
-    letter-spacing: 1px;
+    @include btn;
   }
 }

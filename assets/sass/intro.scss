@@ -1,31 +1,46 @@
-.hero-text {
-
+header {
+  background-color: $blue;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  h1, p {
-    margin: 0 auto;
-  }
+  .hero-text {
 
-  h1 {
-    font-family: $oswald;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 10vh;
-    @include desktop {
-      font-size: 20vh;
+    h1, p {
+      margin: 0 auto;
+      color: white;
+    }
+
+    h1 {
+      font-family: $oswald;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 10vh;
+      @include desktop {
+        font-size: 30vh;
+      }
+    }
+
+    p {
+      font-family: $merriweather;
+      width: 90%;
+      line-height: 2;
+      -webkit-font-smoothing: antialiased;
+      @include desktop {
+        width: 50rem;
+        text-align: center;
+      }
     }
   }
 
-  p {
-    font-family: $merriweather;
-    width: 90%;
-    line-height: 2;
-    @include desktop {
-      width: 50rem;
+  .submit-wrapper {
+
+    button#get-started {
+      color: $blue;
+      background-color: white;
+      @include btn;
     }
   }
 
