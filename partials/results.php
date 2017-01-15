@@ -11,19 +11,19 @@
   <ul>
     <li>
       <div class="dent">
-        <div class="name">Jill Stein</div>
-        <div class="prog" style="width:780px;">3,298,638 <span>Votes</span></div>
-      </div>
-    </li>
-    <li>
-      <div class="dent">
         <div class="name">Bernie Sanders</div>
-        <div class="prog" style="width:600px;">1,786,282 <span>Votes</span></div>
+        <div class="prog" style="width:780px; ">3,298,638 <span>Votes</span></div>
       </div>
     </li>
     <li>
       <div class="dent">
         <div class="name">Hillary Clinton</div>
+        <div class="prog" style="width:600px; ">1,786,282 <span>Votes</span></div>
+      </div>
+    </li>
+    <li>
+      <div class="dent">
+        <div class="name">Jill Stein</div>
         <div class="prog" style="width:580px;">899,927 <span>Votes</span></div>
       </div>
     </li>
