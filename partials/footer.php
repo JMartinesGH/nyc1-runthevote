@@ -4,6 +4,6 @@
       <div class="name">Debug Politics NYC 2017</div>
     </div>
     <div class="team">
-      <p>TEAM: Gray Beltran, Jensen Bouzi, Felix DasGupta, Samir Durrani, Jeff Martinez, Robert Ng, Nakiska Shaikh, Sam Verdure</p>
+      <p>TEAM: Gray Beltran, Jensen Bouzi, Felix DasGupta, Samir Durrani, Jeff Martines, Robert Ng, Nakiska Shaikh, Sam Verdure</p>
     </div>
   </footer>

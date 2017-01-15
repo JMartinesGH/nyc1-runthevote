@@ -66,7 +66,7 @@ ul[data-draggable="target"]
 
 #ballot-wrapper{
     width: 100%;
-    margin: 0 auto 2%;
+    margin: 0 auto 1%;
     display: block;
     overflow: auto;
     min-height: 300px;
@@ -255,10 +255,11 @@ ul[data-draggable="target"]
         color: $mid-blue;
         font-size: 18px;
         text-align: center;
-        margin-top: 2%;
+        margin: 0 auto 2%;
+        line-height: 1.5;
         a{
             text-transform: uppercase;
-            margin-left: 5%;
+            // margin-left: 5%;
             border-bottom: 2px solid $mid-blue;
             font-family: $oswald;
             text-decoration: none;

@@ -1,6 +1,6 @@
 .share-module {
 
-  padding: 1rem;
+  padding: 4rem;
 
   p {
     font-family: $merriweather;
@@ -19,6 +19,9 @@
     font-family: $oswald;
     color: $blue;
     font-size: 4rem;
+    font-weight: 900;
+    line-height: 2;
+    margin: 0 auto 1%;
   }
 
   .share-icons {
