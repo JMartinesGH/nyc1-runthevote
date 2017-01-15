@@ -7,11 +7,13 @@
   <meta name="author" content="">
 
   <title>RUN THE VOTE</title>
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700,900|Oswald:400,700" rel="stylesheet">
 
   <!-- Bootstrap core CSS -->
   <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-theme.min.css">
   <link rel="stylesheet" type="text/css" href="assets/css/c3.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.min.css">
   <link rel="stylesheet" type="text/css" href="assets/css/custom.css">
 
 </head>
@@ -26,52 +28,7 @@
     <div id="candidates" class="row">
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
       <div id="dash">
-        <div class="candidate active">
-          <div class="overlay"></div>
-        </div>
-        <div class="candidate">
-          <div class="overlay"></div>
-        </div>
-        <div class="candidate">
-          <div class="overlay"></div>
-
-        </div>
-        <div class="candidate">
-          <div class="overlay"></div>
-
-        </div>
-        <div class="candidate">
-          <div class="overlay"></div>
-
-        </div>
-        <div class="candidate">
-          <div class="overlay"></div>
-
-        </div>
-        <div class="candidate">
-          <div class="overlay"></div>
-
-        </div>
-        <div class="candidate">
-          <div class="overlay"></div>
-
-        </div>
-        <div class="candidate">
-          <div class="overlay"></div>
-
-        </div>
-        <div class="candidate">
-          <div class="overlay"></div>
-
-        </div>
-        <div class="candidate">
-          <div class="overlay"></div>
-
-        </div>
-        <div class="candidate">
-          <div class="overlay"></div>
-
-        </div>
+        <h1>Who Are You</h1>
       </div>
     </div>
     </div>
@@ -82,37 +39,96 @@
     </div>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
   <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
   <script src="assets/js/c3.min.js"></script>
+  <script src="server/questions.js"></script>
   <script type="text/javascript">
 
     var percent_can = 45;
     var dis = "negative";
+    var candidate = "<div class='candidate'>"
+        +  "<div class='name'></div>"
+        +  "<div class='percentage'></div>"
+        + "</div>";
 
-    function addtoCandidate(){
-      $(".candidate.active .overlay").hide();
-      $(".candidate.active").append("<div class='info'></div>");
-      $active_candidate = $(".candidate.active .info");
-      $active_candidate.append( "<div class='card'>"
-          + "<img src='http://a4.files.biography.com/image/upload/c_fill,cs_srgb,dpr_1.0,g_face,h_300,q_80,w_300/MTE4MDAzNDEwMDU4NTc3NDIy.jpg' />"
-          + "</div>"
-        );
-      $active_candidate.append( "<div class='percent'>"
-        + "<div class='num "+ dis +"'>" + percent_can + "%</div>"
-        + "<h4> Relation </h4>"
-        + "</div>"
-      );
+    function appendCandidate(name, percentage, party){
+      var candidate = "<div class='candidate " + name.toLowerCase().split(" ").join("_") + "'>"
+          +  "<img src='assets/img/jill_stein.png'/>"
+          +  "<div class='name'>"
+          +  "<div class='id_'>"
+          +  "<h4>" + name + "</h4>"
+          +  "<h4 class='party'>, " + party + "</h4>"
+          +  "</div>"
+          +  "<div class='percentage'>" + percentage*100 + "%</div>"
+          +  "<h3>Match</h3>"
+          +  "</div>"
+          +  "</div>";
+      $block = $("#dash");
+      $block.append(candidate);
     }
 
-    $(".candidate").click(function(){
-      $(".candidate.active .info").remove();
-      $(".overlay").show();
-      $(".candidate").removeClass("active");
-      $(this).addClass("active");
-      addtoCandidate();
-    })
 
-    addtoCandidate();
+    window.standard = calculateScore(user, politicians);
+    console.log(window.standard);
+
+    function buildExperience() {
+      var data = window.standard;
+      //sortdata by std
+
+      data.forEach(function(d,i){
+        appendCandidate(d.name, d.std, d.party);
+      })
+      $(".candidate").first().addClass("active")
+      addtoCandidate(data[0].questions);
+
+
+      $(".candidate").click(function(){
+        console.log($(this).hasClass("active"));
+        if (!$(this).hasClass("active")) {
+          $(".candidate.active .card").remove();
+          // $(".overlay").show();
+          $(".candidate").removeClass("active");
+          $(this).addClass("active");
+          addtoCandidate(d.questions);
+        };
+      })
+    }
+    buildExperience();
+
+    function addtoCandidate(obj){
+      $(".candidate.active").append("<div class='card'></div>");
+      $active_candidate = $(".candidate.active .card");
+      var data = obj;
+      var col = 0;
+      data.forEach(function(d,i){
+        //console.log(d);
+        var key = d.key;
+        var val = d.answer;
+        var img;
+        if (val > 1) {
+          img = "supports.png";
+        } else if (val < 1) {
+          img = "opposes.png";
+        } else {
+          img = "neutral.png";
+        }
+        console.log(i);
+        if (i%5==0) {
+          col++;
+          $active_candidate.append("<ul class='list-"+ col +"'></ul>");
+        }
+
+        $list_act = $active_candidate.find(".list-"+col);
+        $list_act.append("<li>"
+          + "<div class='topic'>"
+          + "<img src='assets/img/"+img+"'/>"
+          + "<p>"+ key + "</p>"
+          + "</div>"
+          + "</li>"
+        )
+      })
+    }
 
   </script>
 </body>

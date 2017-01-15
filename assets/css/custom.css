@@ -1,7 +1,24 @@
+.col-lg-12.col-md-12.col-sm-12.col-xs-12, .row, .container-fluid {
+    padding: 0 0 0 0;
+}
+
 #dash {
     text-align: center;
     margin: 30px 0 0 0;
     padding: 50px 50px;
+    background:#dfddf1;
+}
+
+#dash h1 {
+    font-family: "Oswald";
+    font-weight:700;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 150px;
+    color: #192ae8;
+    text-shadow: 5px 5px 0px rgba(255, 255, 255, 1);
+    z-index: 9999;
+    margin: 25px 50px;
 }
 
 .candidate {
@@ -9,19 +26,20 @@
     display: inline-flex;
     width: 325px;
     height: 212.5px;
-    background: lightgrey;
+    background: white;
     vertical-align: top;
-    padding: 10px 10px;
+    /*padding: 10px 10px;*/
     cursor: pointer;
     -webkit-transition: all ease-out 500ms;
     -moz-transition: all ease-out 500ms;
     -o-transition: all ease-out 500ms;
     transition: all ease-out 500ms;
-    border: 1px solid black;
     position: relative;
     /*flex-flow: row wrap;
     justify-content: flex-end;*/
     flex-wrap:wrap;
+    z-index: 99;
+    opacity: 0.75;
 }
 
 .candidate.active {
@@ -30,57 +48,106 @@
     -moz-transition: all ease-out 500ms;
     -o-transition: all ease-out 500ms;
     transition: all ease-out 500ms;
-}
-
-.candidate .overlay {
-    width: 100%;
-    height: 100%;
-    background: blue;
-    opacity: 0.22;
-}
-
-.candidate:hover {
-    background: lightslategrey;
-}
-
-.candidate:hover .overlay {
     opacity: 1;
 }
 
-/*.candidate.active .overlay {
-    display: none;
-}*/
+.candidate .name {
+    position: absolute;
+    right: 25px;
+    top: 40px;
+    text-align: left;
+    font-family: "Oswald";
+    font-weight: 700;
+    color: #192ae8;
+}
 
-.candidate.active .info {
-    width: 100%;
+.name .id_ {
+    display: block;
+}
+
+.name h4 {
+    font-size: 25px;
+    display: inline-block;
+}
+
+.name h4.party {
+    display: none;
+}
+
+.name .percentage {
+    font-size: 30px;
+}
+
+.name h3 {
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 30px;
+}
+
+.candidate:hover {
+    position: relative;
+    top: -5px;
+    left: -5px;
+    -webkit-box-shadow: 10px 10px 10px 0px rgba(209,209,209,1);
+    -moz-box-shadow: 10px 10px 10px 0px rgba(209,209,209,1);
+    box-shadow: 10px 10px 10px 0px rgba(209,209,209,1);
+}
+
+.candidate.active .name {
+    right: 50px;
+}
+
+.candidate.active h4 {
+}
+
+.candidate.active .name h4.party {
+    display: inline-block;
+}
+
+.candidate.active .name .percentage {
+    font-size: 50px;
+    display: inline-block;
+    float: left;
+}
+
+.candidate.active .name h3 {
+    font-size: 50px;
+    margin-top: 8px;
+    margin-left: 15px;
+    display: inline-block;
+    float: left;
+}
+
+.candidate img {
+    width: 40%;
     height: 100%;
 }
 
-.info .card img {
-    width: 180px;
-    height: 180px;
-    display: inline-block;
-    float: left;
-}
-
-.info .percent {
-    display: inline-block;
-    float: left;
-    margin: 0 15px;
-    text-align: center;
+.candidate.active .card{
     position: absolute;
-    right: 150px;
+    bottom: 10px;
+    right: 50px;
 }
 
-.info .percent .num {
-    font-size: 50px;
-    margin: 0 auto;
+.candidate.active .card ul {
+    display: inline-block;
+    float: left;
+    list-style-type: none;
+    font-family: "Merriweather";
+    font-weight: 300;
+    color: #192ae8;
+    opacity: 0.8;
+    font-size: 16px;
 }
 
-.num.negative {
-    color: crimson;
+.candidate.active .card .topic{
+    display: block;
+    position: relative;
 }
 
-.num.positive {
-    color: lightgreen;
+.candidate.active .card .topic img {
+    display: inline-block;
+    float: left;
+    vertical-align: middle;
+    margin-right: 15px;
 }
