@@ -10,12 +10,18 @@
 </head>
 <body id="homepage">
    <div id="fullpage">
-       <!-- quiz/intro -->
-       <div class="section" data-anchor="madlib" class="active">
-           <div>
-               <h1>Madlib/intro</h1>
+      <!-- intro -->
+      <div class="section" data-anchor="intro" class="active">
+        <h1>Truvote</h1>
+        <a href="#madlib">Get Started</a>
+      </div>
+       <!-- quiz -->
+       <div class="section" data-anchor="madlib" >
+           <!-- <div>
+               <h1>Madlib</h1>
                <a href="#dashboard">Submit</a>
-           </div>
+           </div> -->
+           <?php @include "partials/quiz.php"; ?>
        </div>
        <!-- dashboard -->
        <div class="section" data-anchor="dashboard">
@@ -26,11 +32,7 @@
        </div>
        <!-- ballot -->
        <div class="section" data-anchor="ballot">
-           <div>
-               <h1>Ballot</h1>
-               <a href="#results">Submit</a>
-           </div>
-           <?php @include "partials/ballot-flex.php"; ?>
+           <?php @include "partials/ballot.php"; ?>
        </div>
 
        <!-- results -->
@@ -43,13 +45,16 @@
    </div>
 
    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+   <script src="assets/js/ballot.js"></script>
    <script type="text/javascript" src="assets/js/vendor/jquery.fullPage.min.js"></script>
    <script type="text/javascript">
        $(document).ready(function() {
-           $('#fullpage').fullpage();
+           $('#fullpage').fullpage({
+            anchors: ['intro', 'madlib', 'dashboard', 'ballot', 'results']
+            });
            $.fn.fullpage.setAllowScrolling(false, "down");
            $.fn.fullpage.setKeyboardScrolling(false, 'down');
-           anchors: ['madlib', 'dashboard', 'ballot', 'results']
+
        });
    </script>
    <script src="assets/js/app.js"></script>
