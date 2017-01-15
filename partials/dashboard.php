@@ -15,8 +15,10 @@
     </div>
   </div>
   <div class="row">
-      <div class="submit-wrapper">
-      <a href="#ballot" id="dashboard-submit">Make it Count</a>
-      </div>
+    <div class="submit-wrapper">
+      <a href="#ballot" >
+        <div id="dashboard-submit">Make it Count</div>
+      </a>
+    </div>
   </div>
 </div>

@@ -255,3 +255,50 @@
     position: relative;
     top: 100px;
 }
+
+.submit-wrapper {
+    width: 100%;
+    text-align: center;
+}
+
+#dashboard-submit {
+    padding: 20px 20px;
+    background: #192AE8;
+    width: 250px;
+    margin: 0 auto 100px;
+    color: white;
+    border: 2.5px solid white;
+    border-radius: 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: "Oswald";
+    font-size: 30px;
+    text-decoration: none;
+    -webkit-transition: all ease-out 500ms;
+    -moz-transition: all ease-out 500ms;
+    -o-transition: all ease-out 500ms;
+    transition: all ease-out 500ms;
+}
+
+#dashboard-submit:hover {
+    text-decoration: none;
+    border: 2.5px solid white;
+    position: relative;
+    top: -5px;
+    left: -5px;
+    -webkit-box-shadow: 10px 10px 10px 0px #192AE8;
+    -moz-box-shadow: 10px 10px 10px 0px #192AE8;
+    box-shadow: 10px 10px 10px 0px #192AE8;
+}
+
+
+
+
+
+
+
+
+
+
+
+
