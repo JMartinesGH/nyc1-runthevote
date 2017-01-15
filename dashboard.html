@@ -46,61 +46,51 @@
   <script type="text/javascript">
 
     var format = d3.format(".0%");
-
-    function appendCandidate(name, percentage, party){
-      var shortname = name.toLowerCase().split(" ").join("_");
-      if(name == "Martin O'Malley"){
-        shortname = "martin_o";
-      }
-      console.log(shortname);
-      var candidate = "<div class='candidate " + shortname + "'>"
-          +  "<img src='assets/img/"+shortname+".png'/>"
-          +  "<div class='name'>"
-          +  "<div class='id_'>"
-          +  "<h4>" + name + "</h4>"
-          +  "<h4 class='party'>, " + party + "</h4>"
-          +  "</div>"
-          +  "<div class='percentage'>" + format(percentage) + "</div>"
-          +  "<h3>Match</h3>"
-          +  "</div>"
-          +  "</div>";
-      $block = $("#dash");
-      $block.append(candidate);
-    }
-
-
     window.standard = calculateScore(user, politicians);
-    console.log(window.standard);
+    //console.log(window.standard);_.findWhere(list, properties)
+    var expdata = _.sortBy(window.standard, 'std');
+    expdata = expdata.reverse();
+    expdata.forEach(function(d){
+      var shortname = d.name.toLowerCase().split(" ").join("_");
+      if(d.name == "Martin O'Malley"){
+        d.shortname = "martin_o";
+      } else {
+        d.shortname = shortname;
+      }
+    })
+    buildExperience(expdata);
 
-    function buildExperience() {
-      var data = window.standard;
-      //sortdata by std
+    function buildExperience(expdata) {
+      var data = expdata;
 
       data.forEach(function(d,i){
-        appendCandidate(d.name, d.std, d.party);
+        appendCandidate(d.name, d.shortname, d.std, d.party, d.questions);
+        //addtoCandidate(d.questions);
       })
-      $(".candidate").first().addClass("active")
-      addtoCandidate(data[0].questions);
-
-
+      $(".candidate").first().addClass("active");
+      addtoCandidate(expdata[0].shortname);
       $(".candidate").click(function(){
-        console.log($(this).hasClass("active"));
+        //console.log($(this).hasClass("active"));
         if (!$(this).hasClass("active")) {
           $(".candidate.active .card").remove();
-          // $(".overlay").show();
           $(".candidate").removeClass("active");
           $(this).addClass("active");
-          addtoCandidate(d.questions);
+          console.log($(this).attr('id'));
+          addtoCandidate($(this).attr('id'));
         };
       })
     }
-    buildExperience();
 
-    function addtoCandidate(obj){
+    function addtoCandidate(shortname){
       $(".candidate.active").append("<div class='card'></div>");
-      $active_candidate = $(".candidate.active .card");
-      var data = obj;
+      $active_candidate = $(".candidate.active").find(".card");
+      //console.log($active_candidate);
+
+      var data = _.findWhere(expdata, {shortname: shortname});
+      data = data.questions;
+      //console.log(data);
       var col = 0;
+      //console.log(data);
       data.forEach(function(d,i){
         //console.log(d);
         var key = d.key;
@@ -113,7 +103,7 @@
         } else {
           img = "neutral.png";
         }
-        console.log(i);
+        //console.log(i);
         if (i%5==0) {
           col++;
           $active_candidate.append("<ul class='list-"+ col +"'></ul>");
@@ -128,6 +118,26 @@
           + "</li>"
         )
       })
+    }
+
+    function appendCandidate(name, shortname, percentage, party){
+      // var shortname = name.toLowerCase().split(" ").join("_");
+      // if(name == "Martin O'Malley"){
+      //   shortname = "martin_o";
+      // }
+      //console.log(shortname);
+      var candidate = "<div class='candidate' id='"+shortname+"'>"
+          +  "<img src='assets/img/"+shortname+".png'/>"
+          +  "<div class='name'>"
+          +  "<div class='id_'>"
+          +  "<h4>" + name + "<span class='party'> " + party + "</span></h4>"
+          +  "</div>"
+          +  "<div class='percentage'>" + format(percentage) + "</div>"
+          +  "<h3>Match</h3>"
+          +  "</div>"
+          +  "</div>";
+      $block = $("#dash");
+      $block.append(candidate);
     }
 
   </script>

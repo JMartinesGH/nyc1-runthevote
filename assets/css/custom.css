@@ -59,6 +59,7 @@
     font-family: "Oswald";
     font-weight: 700;
     color: #192ae8;
+    max-width: 300px;
 }
 
 .name .id_ {
@@ -70,7 +71,7 @@
     display: inline-block;
 }
 
-.name h4.party {
+.name span.party {
     display: none;
 }
 
@@ -100,8 +101,8 @@
 .candidate.active h4 {
 }
 
-.candidate.active .name h4.party {
-    display: inline-block;
+.candidate.active .name span.party {
+    display: block;
 }
 
 .candidate.active .name .percentage {
@@ -123,7 +124,12 @@
     height: 100%;
 }
 
+.candidate .card {
+    display: none;
+}
+
 .candidate.active .card{
+    display: block;
     position: absolute;
     bottom: 10px;
     right: 50px;
