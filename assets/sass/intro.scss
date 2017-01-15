@@ -38,7 +38,9 @@ header {
       text-shadow: 2px 2px 0 $dark-periwinkle;
       @include desktop {
         font-size: 30vh;
+        font-size: 40vh;
         text-shadow: 5px 5px 0 $dark-periwinkle;
+        text-shadow: 1vh 1vh 0 $dark-periwinkle;
       }
     }
 
@@ -48,7 +50,8 @@ header {
       line-height: 2;
       -webkit-font-smoothing: antialiased;
       @include desktop {
-        width: 50rem;
+        font-size: 1.5rem;
+        width: 60rem;
         text-align: center;
       }
     }

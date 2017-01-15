@@ -3,55 +3,55 @@
         politicians;
         userAnswers = [
             {
-                "answer" : 2,
-                "key" : "gayMarriage"
+                "answer" : 0,
+                "key" : "Gay Marriage"
             }, {
-                "answer" : 2,
-                "key" : "obamacare"
+                "answer" : 0,
+                "key" : "Obamacare"
             }, {
-                "answer" : 2,
-                "key" : "gunLaws"
+                "answer" : 0,
+                "key" : "Gun Laws"
             }, {
-                "answer" : 1,
-                "key" : "proIsrael"
+                "answer" : 0,
+                "key" : "Pro Israel"
             }, {
-                "answer" : 2,
-                "key" : "military"
+                "answer" : 0,
+                "key" : "Military"
             }, {
-                "answer" : 1,
-                "key" : "armyBudget"
+                "answer" : 0,
+                "key" : "Army Budget"
             }, {
-                "answer" : 2,
-                "key" : "drones"
+                "answer" : 0,
+                "key" : "Drones"
             }, {
-                "answer" : 2,
-                "key" : "socialSecurity"
+                "answer" : 0,
+                "key" : "Social Security"
             }, {
-                "answer" : 1,
-                "key" : "banks"
+                "answer" : 0,
+                "key" : "Banks"
             }, {
-                "answer" : 1,
-                "key" : "marijuana"
+                "answer" : 0,
+                "key" : "Marijuana"
             }, {
-                "answer" : -2,
-                "key" : "assaultRifles"
-            }, 
-            {
-                "answer" : 2,
-                "key" : "bigGov"
+                "answer" : 0,
+                "key" : "Assault Rifles"
             },
             {
-                "answer": -2,
-                "key": "collectRecords"
+                "answer" : 0,
+                "key" : "Big Gov"
             },
             {
-                "answer": -2,
-                "key": "religion"
+                "answer": 0,
+                "key": "Collect Records"
             },
             {
-                "answer": 2,
-                "key": "pathway"
-            } 
+                "answer": 0,
+                "key": "Religion"
+            },
+            {
+                "answer": 0,
+                "key": "Pathway"
+            }
         ];
 
     function submitQuiz(){
@@ -76,106 +76,120 @@
 
     // window.standard = calculateScore(user, politicians);
 
-    function buildExperience() {
-      var data = window.standard;
-      //sortdata by std
+      var format = d3.format(".0%");
 
-      data.forEach(function(d,i){
-        appendCandidate(d.name, d.std, d.party);
-      })
-      $(".candidate").first().addClass("active")
-      addtoCandidate(data[0].questions);
+      function buildExperience(expdata) {
+        var data = expdata;
 
-
-      $(".candidate").click(function(){
-        console.log($(this).hasClass("active"));
-        if (!$(this).hasClass("active")) {
-          $(".candidate.active .card").remove();
-          // $(".overlay").show();
-          $(".candidate").removeClass("active");
-          $(this).addClass("active");
-          addtoCandidate(d.questions);
-        };
-      })
-    }
-
-
-    function appendCandidate(name, percentage, party){
-      var shortname = name.toLowerCase().split(" ").join("_");
-      if(name == "Martin O'Malley"){
-        shortname = "martin_o";
+        data.forEach(function(d,i){
+          appendCandidate(d.name, d.shortname, d.std, d.party, d.questions);
+          //addtoCandidate(d.questions);
+        })
+        $(".candidate").first().addClass("active");
+        addtoCandidate(expdata[0].shortname);
+        $(".candidate").click(function(){
+          //console.log($(this).hasClass("active"));
+          if (!$(this).hasClass("active")) {
+            $(".candidate.active .card").remove();
+            $(".candidate").removeClass("active");
+            $(this).addClass("active");
+            console.log($(this).attr('id'));
+            addtoCandidate($(this).attr('id'));
+          };
+        })
       }
-      // console.log(shortname);
-      var candidate = "<div class='candidate " + shortname + "'>"
-          +  "<img src='assets/img/"+shortname+".png'/>"
-          +  "<div class='name'>"
-          +  "<div class='id_'>"
-          +  "<h4>" + name + "</h4>"
-          +  "<h4 class='party'>, " + party + "</h4>"
-          +  "</div>"
-          +  "<div class='percentage'>" + format(percentage) + "</div>"
-          +  "<h3>Match</h3>"
-          +  "</div>"
-          +  "</div>";
-      $block = $("#dash");
-      $block.append(candidate);
-    }
 
-    function addtoCandidate(obj){
-      $(".candidate.active").append("<div class='card'></div>");
-      $active_candidate = $(".candidate.active .card");
-      var data = obj;
-      var col = 0;
-      data.forEach(function(d,i){
-        //console.log(d);
-        var key = d.key;
-        var val = d.answer;
-        var img;
-        if (val > 1) {
-          img = "supports.png";
-        } else if (val < 1) {
-          img = "opposes.png";
-        } else {
-          img = "neutral.png";
-        }
-        // console.log(i);
-        if (i%5==0) {
-          col++;
-          $active_candidate.append("<ul class='list-"+ col +"'></ul>");
-        }
+      function addtoCandidate(shortname){
+        $(".candidate.active").append("<div class='card'></div>");
+        $active_candidate = $(".candidate.active").find(".card");
+        //console.log($active_candidate);
 
-        $list_act = $active_candidate.find(".list-"+col);
-        $list_act.append("<li>"
-          + "<div class='topic'>"
-          + "<img src='assets/img/"+img+"'/>"
-          + "<p>"+ key + "</p>"
-          + "</div>"
-          + "</li>"
-        )
-      })
-    }
+        var data = _.findWhere(expdata, {shortname: shortname});
+        data = data.questions;
+        //console.log(data);
+        var col = 0;
+        //console.log(data);
+        data.forEach(function(d,i){
+          //console.log(d);
+          var key = d.key;
+          var val = d.answer;
+          var img;
+          if (val > 1) {
+            img = "supports.png";
+          } else if (val < 1) {
+            img = "opposes.png";
+          } else {
+            img = "neutral.png";
+          }
+          //console.log(i);
+          if (i%5==0) {
+            col++;
+            $active_candidate.append("<ul class='list-"+ col +"'></ul>");
+          }
 
-    $("#quiz-submit").click(function() {
-        if( ($('select option:selected[value]').length - 1) === userAnswers.length ){
+          $list_act = $active_candidate.find(".list-"+col);
+          $list_act.append("<li>"
+            + "<div class='topic'>"
+            + "<div class='sup' style='background:url(assets/img/"+img+") center center no-repeat'></div>"
+            // + "<img src='assets/img/"+img+"'/>"
+            + "<p>"+ key + "</p>"
+            + "</div>"
+            + "</li>"
+          );
+        });
+      }
 
-            submitQuiz().then(function(data){
-                
-                politicians = data;
-                window.standard = calculateScore(userAnswers, politicians);
+      function appendCandidate(name, shortname, percentage, party){
+        // var shortname = name.toLowerCase().split(" ").join("_");
+        // if(name == "Martin O'Malley"){
+        //   shortname = "martin_o";
+        // }
+        //console.log(shortname);
+        var candidate = "<div class='candidate' id='"+shortname+"'>"
+            +  "<img src='assets/img/"+shortname+".png'/>"
+            +  "<div class='name'>"
+            +  "<div class='id_'>"
+            +  "<h4>" + name + "<span class='party'> " + party + "</span></h4>"
+            +  "</div>"
+            +  "<div class='percentage'>" + format(percentage) + "</div>"
+            +  "<h3>Match</h3>"
+            +  "</div>"
+            +  "</div>";
+        $block = $("#dash");
+        $block.append(candidate);
+      }
 
-                buildExperience();
+    // $("#quiz-submit").click(function() {
+    //     if( ($('select option:selected[value]').length - 1) === userAnswers.length ){
 
-            }).error(function(err){
-                console.log('err: ', error);
-            });
+    //         submitQuiz().then(function(data){
 
-        } else{
-            alert("Please fill in all blanks");
-            $('select option:selected:not([value])').each(function(){
-                $(this).parent().css('background','rgba(255,0,0,0.2)');
-            });
-        }
-    });
+    //             politicians = data;
+    //             window.standard = calculateScore(userAnswers, politicians);
+    //             //console.log(window.standard);_.findWhere(list, properties)
+    //             var expdata = _.sortBy(window.standard, 'std');
+    //             expdata = expdata.reverse();
+    //             expdata.forEach(function(d){
+    //               var shortname = d.name.toLowerCase().split(" ").join("_");
+    //               if(d.name == "Martin O'Malley"){
+    //                 d.shortname = "martin_o";
+    //               } else {
+    //                 d.shortname = shortname;
+    //               }
+    //             })
+    //             buildExperience(expdata);
+
+    //         }).error(function(err){
+    //             console.log('err: ', error);
+    //         });
+
+    //     } else{
+    //         alert("Please fill in all blanks");
+    //         $('select option:selected:not([value])').each(function(){
+    //             $(this).parent().css('background','rgba(255,0,0,0.2)');
+    //         });
+    //     }
+    // });
 
     // $('select').on('click', function(){
     //     $(this).css('background','none');

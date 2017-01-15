@@ -137,5 +137,5 @@
   </span>have a pathway to citizenship. 
 </div>
 <div class="submit-wrapper">
-<button id="quiz-submit">Show My Match</button>
+<a href="#dashboard" id="quiz-submit">Show My Match</a>
 </div>
