@@ -48,6 +48,7 @@
                <a href="#">Submit</a>
            </div> -->
            <?php @include "partials/results.php"; ?>
+           <?php @include "partials/footer.php"; ?>
        </div>
    </div>
 
