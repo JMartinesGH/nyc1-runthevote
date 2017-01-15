@@ -5,6 +5,7 @@
 <head>
    <link rel="stylesheet" type="text/css" href="assets/css/vendor/jquery.fullPage.css" />
    <!-- Bootstrap core CSS -->
+   <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700,900|Oswald:400,700" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-theme.min.css">
   <link rel="stylesheet" type="text/css" href="assets/css/c3.min.css">
