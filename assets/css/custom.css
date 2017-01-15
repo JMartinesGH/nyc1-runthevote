@@ -1,15 +1,15 @@
 .col-lg-12.col-md-12.col-sm-12.col-xs-12, .row, .container-fluid {
     padding: 0 0 0 0;
+    background:#dfddf1;
 }
 
 #dash {
     text-align: center;
     margin: 30px 0 0 0;
     padding: 50px 50px;
-    background:#dfddf1;
 }
 
-#dash h1 {
+#dash h1, #results_title{
     font-family: "Oswald";
     font-weight:700;
     text-align: left;
@@ -132,7 +132,7 @@
     display: block;
     position: absolute;
     bottom: 25px;
-    right: 20px;
+    right: 45px;
     opacity: 0.75;
 }
 
@@ -145,13 +145,13 @@
     color: #192ae8;
     opacity: 0.8;
     font-size: 16px;
-    padding-left: 5px;
+    padding-left: 2px;
 }
 
 .candidate.active .card li{
     display: block;
     position: relative;
-    width: 120px;
+    width: 114px;
 }
 
 .candidate.active .card .topic {
@@ -164,7 +164,7 @@
     background-size: contain !important;
     display: inline-block;
     vertical-align: middle;
-    margin-right: 10px;
+    margin-right: 5px;
     width: 12px;
     height: 12px;
     position: relative;
@@ -174,4 +174,84 @@
 .candidate.active .card .topic p {
     display: inline-block;
     font-size: 12px;
+}
+
+
+.results {
+    background: white;
+    min-height: 200px;
+    padding: 250px 150px;
+}
+
+.results p {
+    color: #192ae8;
+    font-family: "Merriweather";
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.results h4 {
+    color: #192ae8;
+    text-transform: uppercase;
+    font-family: "Oswald";
+    font-weight: 700;
+    font-size: 50px;
+    margin-bottom: 100px;
+}
+
+.results ul {
+    list-style-type: none;
+    font-family: "Oswald";
+    font-weight: 700;
+    color: #192ae8;
+    opacity: 1;
+    font-size: 45px;
+}
+
+.results ul li {
+    margin: 20px;
+    position: relative;
+    text-align: right;
+}
+
+.results ul .name {
+    display: inline-block;
+    text-align: right;
+    font-size: 45px;
+    position: relative;
+    right: 800px;
+}
+.results ul .prog span {
+    display: none;
+}
+.results ul .prog {
+    display: inline-block;
+    text-align: left;
+    font-size: 25px;
+    color: white;
+    background: #192ae8;
+    padding: 10px 15px;
+    position: absolute;
+    left: 300px;
+    top: 5px;
+    -webkit-transition: all ease-out 500ms;
+    -moz-transition: all ease-out 500ms;
+    -o-transition: all ease-out 500ms;
+    transition: all ease-out 500ms;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.results ul .prog:hover {
+    border: 1px solid navy;
+    font-size: 30px;
+}
+
+.results ul .prog:hover span {
+    display: inline-block;
+}
+
+#results_title {
+    position: relative;
+    top: 100px;
 }

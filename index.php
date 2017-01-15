@@ -43,10 +43,11 @@
 
        <!-- results -->
        <div class="section" data-anchor="results">
-           <div>
+           <!-- <div>
                <h1>Results</h1>
                <a href="#">Submit</a>
-           </div>
+           </div> -->
+           <?php @include "partials/results.php"; ?>
        </div>
    </div>
 
