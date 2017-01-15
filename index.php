@@ -6,6 +6,7 @@
    <link rel="stylesheet" type="text/css" href="assets/css/vendor/jquery.fullPage.css" />
    <!-- Bootstrap core CSS -->
    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700,900|Oswald:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
   <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-theme.min.css">
   <link rel="stylesheet" type="text/css" href="assets/css/c3.min.css">
@@ -47,8 +48,11 @@
                <h1>Results</h1>
                <a href="#">Submit</a>
            </div> -->
-           <?php @include "partials/results.php"; ?>
-           <?php @include "partials/footer.php"; ?>
+           <?php 
+            @include "partials/results.php";
+            @include "partials/share.php";  
+            @include "partials/footer.php"; 
+            ?>
        </div>
    </div>
 
