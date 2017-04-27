@@ -3,6 +3,12 @@
 ?>
 <html>
 <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Truvote: Run The Vote</title>
+  <meta name="Googlebot-News" content="noindex,follow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <?php @include "partials/meta.php" ?>
    <link rel="stylesheet" type="text/css" href="assets/css/vendor/jquery.fullPage.css" />
    <!-- Bootstrap core CSS -->
    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700,900|Oswald:400,700" rel="stylesheet">
@@ -12,7 +18,7 @@
   <link rel="stylesheet" type="text/css" href="assets/css/c3.min.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.min.css">
   <link rel="stylesheet" type="text/css" href="assets/css/custom.css">
-  
+
    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
    <title>Run the Vote</title>
 </head>
@@ -48,10 +54,10 @@
                <h1>Results</h1>
                <a href="#">Submit</a>
            </div> -->
-           <?php 
+           <?php
             @include "partials/results.php";
-            @include "partials/share.php";  
-            @include "partials/footer.php"; 
+            @include "partials/share.php";
+            @include "partials/footer.php";
             ?>
        </div>
    </div>
